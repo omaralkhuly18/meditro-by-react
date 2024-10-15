@@ -1,66 +1,91 @@
 import React from "react";
-import { Navbar, Container, NavDropdown, Nav, Collapse } from 'react-bootstrap';
+import { Navbar, Container, NavDropdown, Nav } from 'react-bootstrap';
 import './Nav.css';
-import Logo from '../../assets/logo.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import Logo from '../../assets/logo.jpg';
+
 const ContainerNav = () => {
     return (
         <Navbar expand="lg">
             <Container>
                 <Navbar.Brand>
-                    <img src={Logo} title="Logo"/>
+                    <img src={Logo} alt="Logo" />
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Toggle aria-controls="basic-navbar-nav">
+                    <div className="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </Navbar.Toggle>
+
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="#home" className="active">Home</Nav.Link>
                         <NavDropdown title="Pages" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#About">
-                                About Us
+                                <span className="nav_links">
+                                    About Us
+                                </span>
                             </NavDropdown.Item>
                             <NavDropdown.Item href="#Team">
-                                Our Team
+                                <span className="nav_links">
+                                    Our Team
+                                </span>
                             </NavDropdown.Item>
-                            <NavDropdown.Item href="#FAQ's">
-                                FAQ's
+                            <NavDropdown.Item href="#FAQ">
+                                <span className="nav_links">
+                                    FAQ's
+                                </span>
                             </NavDropdown.Item>
                             <NavDropdown.Item href="#Booking">
-                                Booking
+                                <span className="nav_links">
+                                    Booking
+                                </span>
                             </NavDropdown.Item>
                             <NavDropdown.Item href="#Error">
-                                Error 404
+                                <span className="nav_links">
+                                    Error 404
+                                </span>
                             </NavDropdown.Item>
                             <NavDropdown.Item href="#sign">
-                                Login / Register
+                                <span className="nav_links">
+                                    Login / Register
+                                </span>
                             </NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="Services" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#Services">
-                                Services
+                                <span className="nav_links">
+                                    Services
+                                </span>
                             </NavDropdown.Item>
-                            <NavDropdown.Item href="#Services Details">
-                                Services Details
+                            <NavDropdown.Item href="#ServicesDetails">
+                                <span className="nav_links">
+                                    Services Details
+                                </span>
                             </NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="Blog" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#Blog">
-                                Blog
+                                <span className="nav_links">
+                                    Blog
+                                </span>
                             </NavDropdown.Item>
-                            <NavDropdown.Item href="#Blog Details">
-                                Blog Details
+                            <NavDropdown.Item href="#BlogDetails">
+                                <span className="nav_links">
+                                    Blog Details
+                                </span>
                             </NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#contact">
-                            Contact Us
-                        </Nav.Link>
-                        <Nav.Link href="#serch">
-                            serch
-                        </Nav.Link>
-                        <Nav.Link href="#phone">
-                            icon + (+01) 999 888 777
-                        </Nav.Link>
+                        <Nav.Link href="#contact">Contact Us</Nav.Link>
+                        <Nav.Link href="#search">Search</Nav.Link>
+                        <Nav.Link href="#phone">Icon + (+01) 999 888 777</Nav.Link>
                         <Nav.Link href="#contact_button">
                             <button>
-                                Contact Us
+                                <span className="span_text">Contact Us</span>
+                                <FontAwesomeIcon className="span_icon" icon={faChevronRight} />
                             </button>
                         </Nav.Link>
                     </Nav>
