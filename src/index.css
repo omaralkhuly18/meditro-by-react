@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Tajawal", sans-serif !important;
-  background-color: var(--main-color) !important;
+  background-color: white !important;
 }
 .tajawal_extralight {
   font-family: "Tajawal", sans-serif;
@@ -51,6 +51,9 @@ html{
 :root{
   --main-color: #5a5b9c;
   --btn-color: #565acf;
+  --color-heavy: #1f2278;
+  --hover-btn-color:#f49762;
+  --border-color:#f49762;
   --orange-color: #f17732;
 }
 section ,

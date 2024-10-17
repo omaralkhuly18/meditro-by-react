@@ -2,7 +2,7 @@ import React from "react";
 import { Navbar, Container, NavDropdown, Nav } from 'react-bootstrap';
 import './Nav.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faPhone, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import Logo from '../../assets/logo.jpg';
 
 const ContainerNav = () => {
@@ -80,8 +80,12 @@ const ContainerNav = () => {
                             </NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link href="#contact">Contact Us</Nav.Link>
-                        <Nav.Link href="#search">Search</Nav.Link>
-                        <Nav.Link href="#phone">Icon + (+01) 999 888 777</Nav.Link>
+                        <Nav.Link href="#search">
+                            <FontAwesomeIcon icon={faSearch} className="color_icon"/>
+                        </Nav.Link>
+                        <Nav.Link href="#phone" className="display_none">
+                            <FontAwesomeIcon icon={faPhone} className="color_icon me-3" />
+                            (+01) 999 888 777</Nav.Link>
                         <Nav.Link href="#contact_button">
                             <button>
                                 <span className="span_text">Contact Us</span>
