@@ -102,3 +102,18 @@ img.img_inm5 {
        transform: translateY(-20px);
     }
 }
+
+@media screen and (max-width: 767px) and (min-width: 230px){
+    header .row h2{
+        font-size: 40px;
+    }
+    .subscriber{
+        display: none;
+    }
+}
+@media screen and (max-width: 575px) and (min-width: 230px){
+    header .row .height_col{
+        height: auto;
+        margin-bottom: 1%;
+    }
+}
