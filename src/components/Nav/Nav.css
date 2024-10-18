@@ -53,7 +53,7 @@ nav .navbar-nav button .span_icon {
 }
 
 .navbar-nav .dropdown-menu {
-    position: static;
+    position: absolute;
     border: 1px solid #fff;
     background-color: #fff;
     box-shadow: 0 0 10px 9px #f6ebeb;
@@ -61,14 +61,12 @@ nav .navbar-nav button .span_icon {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s, visibility 0.5s;
+    top: 75% !important;
 }
 
 .navbar-nav .dropdown:hover .dropdown-menu {
     opacity: 1 !important;
     visibility: visible !important;
-    display: block;
-}
-.dropdown-menu{
     display: block !important;
 }
 .navbar-nav .dropdown {
@@ -84,30 +82,31 @@ nav .navbar-nav button .span_icon {
     transition: 1s;
 }
 
-.navbar-nav .dropdown-menu a .nav_links {
+.navbar-nav .dropdown-menu .nav_links .span_down_links {
     position: relative;
+    display: inline-block !important;
 }
 
-.navbar-nav .dropdown-menu a .nav_links::after {
+.navbar-nav .dropdown-menu .nav_links .span_down_links::after {
     position: absolute;
     content: "";
     width: 0;
     height: 2px;
     bottom: 0;
     right: 0;
-    left: 0;
     background-color: var(--main-color);
     transform-origin: right;
+    transition: 1s;
 }
 
-.navbar-nav .dropdown-menu a .nav_links:hover {
+.navbar-nav .dropdown-menu .nav_links:hover .span_down_links {
     color: var(--btn-color) !important;
 }
 
-.navbar-nav .dropdown-menu a .nav_links:hover::after {
+.navbar-nav .dropdown-menu .nav_links:hover .span_down_links::after {
     width: 100%;
     right: auto;
-    left: 15px;
+    left: 0;
     transform-origin: left;
 }
 
