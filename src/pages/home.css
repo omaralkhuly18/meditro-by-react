@@ -105,10 +105,14 @@ img.img_inm5 {
 
 @media screen and (max-width: 767px) and (min-width: 230px){
     header .row h2{
-        font-size: 40px;
+        font-size: 25px;
     }
     .subscriber{
         display: none;
+    }
+    header .row button{
+        width: 140px;
+        height: 55px;
     }
 }
 @media screen and (max-width: 575px) and (min-width: 230px){
