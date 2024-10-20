@@ -5,13 +5,16 @@ import ContainerNav from './components/Nav/Navbar';
 import ContainerHome from "./pages/Home";
 import ContainerAbout from "./pages/about";
 import ContainerFooter from "./components/PartFooter/Footer";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+const routes = createBrowserRouter();
 function App() {
   return (
     <Fragment>
-      <ContainerNav/>
+      {/* <ContainerNav/>
       <ContainerHome/>
       <ContainerAbout/>
-      <ContainerFooter/>
+      <ContainerFooter/> */}
+      <RouterProvider router={}/>
     </Fragment>
   );
 }

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Navbar, Container, NavDropdown, Nav } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faPhone, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import {Link} from "react-router-dom";
 import Logo from '../../assets/logo.jpg';
 import './Nav.css';
 
@@ -27,7 +28,7 @@ const ContainerNav = () => {
 
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#home" className="active">Home</Nav.Link>
+                        <Link href="#home" className="active">Home</Link>
 
                         {/* قائمة Pages */}
                         <NavDropdown
@@ -109,20 +110,20 @@ const ContainerNav = () => {
                                 </NavDropdown.Item>
                         </NavDropdown>
 
-                        <Nav.Link href="#contact">Contact Us</Nav.Link>
-                        <Nav.Link href="#search">
+                        <Link href="#contact">Contact Us</Link>
+                        <Link href="#search">
                             <FontAwesomeIcon icon={faSearch} className="color_icon" />
-                        </Nav.Link>
-                        <Nav.Link href="#phone" className="display_none">
+                        </Link>
+                        <Link href="#phone" className="display_none">
                             <FontAwesomeIcon icon={faPhone} className="color_icon me-3" />
                             (+01) 999 888 777
-                        </Nav.Link>
-                        <Nav.Link href="#contact_button">
+                        </Link>
+                        <Link href="#contact_button">
                             <button>
                                 <span className="span_text">Contact Us</span>
                                 <FontAwesomeIcon className="span_icon" icon={faChevronRight} />
                             </button>
-                        </Nav.Link>
+                        </Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
