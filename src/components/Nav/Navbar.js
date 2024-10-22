@@ -28,7 +28,7 @@ const ContainerNav = () => {
 
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Link href="#home" className="active">Home</Link>
+                        <Link to="/home" className="active">Home</Link>
 
                         {/* قائمة Pages */}
                         <NavDropdown
@@ -38,7 +38,8 @@ const ContainerNav = () => {
                             onMouseEnter={() => setShowPages(true)}
                             onMouseLeave={() => setShowPages(false)}
                         >
-                            <NavDropdown.Item className='nav_links' href="#About">
+                            <NavDropdown.Item className='nav_links' 
+                            to="/About" as={Link}>
                                 <span className='span_down_links'>
                                     About Us
                                 </span>
@@ -110,15 +111,15 @@ const ContainerNav = () => {
                                 </NavDropdown.Item>
                         </NavDropdown>
 
-                        <Link href="#contact">Contact Us</Link>
-                        <Link href="#search">
+                        <Link to="/Contact">Contact Us</Link>
+                        <Link to="/search">
                             <FontAwesomeIcon icon={faSearch} className="color_icon" />
                         </Link>
-                        <Link href="#phone" className="display_none">
+                        <Link to="/phone" className="display_none">
                             <FontAwesomeIcon icon={faPhone} className="color_icon me-3" />
                             (+01) 999 888 777
                         </Link>
-                        <Link href="#contact_button">
+                        <Link to="/contact_button">
                             <button>
                                 <span className="span_text">Contact Us</span>
                                 <FontAwesomeIcon className="span_icon" icon={faChevronRight} />

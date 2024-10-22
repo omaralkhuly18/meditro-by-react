@@ -8,7 +8,7 @@ import SharpeImgTwo from "../assets/sharpe2.png";
 import SharpeImgThree from "../assets/sharpe3.png";
 import SharpeImgFour from "../assets/sharpe4.png";
 import './about.css';
-const ContainerAbout = () => {
+const About = () => {
     return (
         <div class="container">
             <div class="row align-items-center">
@@ -116,4 +116,4 @@ const ContainerAbout = () => {
     );
 }
 
-export default ContainerAbout;
+export default About;
