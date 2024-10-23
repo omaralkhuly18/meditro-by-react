@@ -1,6 +1,8 @@
 
 .page_banner_entry {
-    height: 550px;
+    height: 200px;
+    display: grid;
+    align-items: center;
 }
 .page_banner_entry h1 {
     color: #1f2278;
@@ -10,15 +12,18 @@
     text-transform: capitalize;
 }
 .breadcrumb_row {
-    background-color: #565acf;
-    border-radius: 10px;
+    display: flex !important;
+    justify-content: center;
     box-shadow: 0 5px 30px 0 rgba(86, 90, 207, .3);
     display: inline-block;
     font-family: Montserrat, sans-serif;
     padding: 12px 30px;
+    height: 65px;
 }
 .breadcrumb_row ul {
-    background: transparent;
+    width: 20%;
+    border-radius: 10px !important;
+    background-color: #565acf;
     justify-content: center;
     margin: 0;
     padding: 0;
@@ -34,6 +39,11 @@
     align-items: center;
     color: #fff;
     display: flex;
+}
+.breadcrumb-row ul li a svg {
+    margin-right: 10px;
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
 }
 .breadcrumb_item+.breadcrumb_item {
     color: #fff;
