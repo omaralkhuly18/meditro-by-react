@@ -1,5 +1,8 @@
 import React from 'react';
 import './home.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import Booking from '../components/Booking/Booking';
 import About from "./about";
 import ContactForm from '../components/ContactForm/ContactForm';
 import GoToTopButton from '../components/buttonGoToTop/ButtonGoToTop';
@@ -11,6 +14,13 @@ import ImgInmaTwo from '../assets/img_inemation2.png';
 import ImgInmaThree from '../assets/img_inemation4.png';
 import ImgInmaFour from '../assets/img_inemation9.png';
 import ImgInmaFive from '../assets/img_inemation12.png';
+
+import Appointment1 from '../assets/appointment1.png';
+import Appointment2 from '../assets/appointment2.png';
+import Appointment3 from '../assets/appointment3.png';
+import Appointment4 from '../assets/appointment4.png';
+import Appointment5 from '../assets/appointment5.png';
+import Appointment6 from '../assets/appointment6.png';
 const Home = () => {
     return (
         <>
@@ -40,7 +50,84 @@ const Home = () => {
                 <h3>Contact Us</h3>
                 <ContactForm />
             </section>
-            <GoToTopButton/>
+            <section className="section-area section_area section-sp5 work-area">
+                <div className="container-sm">
+                    <div className="heading-bx text-center">
+                        <h6 className="title_ext1 ">Working Process</h6>
+                        <h2 className="title_ext2">How we works?</h2>
+                    </div>
+                    <div className="row justify-content-center">
+                        <div className="col-lg-4 col-sm-6 mb-30">
+                            <div className="work-bx">
+                                <div className="work-num-bx">01</div>
+                                <div className="work-content">
+                                    <h5 className="title text-secondary mb-10">Make Appointmnet</h5>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content of.</p>
+                                </div>
+                                <a href="" className="btn btn-primary btn_primary lights light">
+                                    <span> View More </span>
+                                    <FontAwesomeIcon icon={faArrowRight} className='btn-icon-bx' />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-sm-6 mb-30">
+                            <div className="work-bx active">
+                                <div className="work-num-bx">02</div>
+                                <div className="work-content">
+                                    <h5 className="title text-secondary mb-10">Take Treatment</h5>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content of.</p>
+                                </div>
+                                <a href="" className="btn btn-primary btn_primary lights light">
+                                    <span> View More </span>
+                                    <FontAwesomeIcon icon={faArrowRight} className='btn-icon-bx' />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-sm-6 mb-30">
+                            <div className="work-bx">
+                                <div className="work-num-bx">03</div>
+                                <div className="work-content">
+                                    <h5 className="title text-secondary mb-10">Registration</h5>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content of.</p>
+                                </div>
+                                <a href="" className="btn btn-primary btn_primary lights light">
+                                    <span> View More </span>
+                                    <FontAwesomeIcon icon={faArrowRight} className='btn-icon-bx' />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-area account-wraper1">
+                <div class="container-fluid">
+                    <div class="appointment-inner appointment_inner section-sp2">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-xl-5 col-lg-6 col-md-6">
+                                    <div class="appointment-form form-wraper">
+                                        <h3 class="title">Book Appointment</h3>
+                                        <Booking />
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 col-lg-6 col-md-6">
+                                    <div class="appointment-thumb">
+                                        <img className='img_par' src={Appointment1} alt="" />
+                                        <div class="images-group">
+                                            <img class="img1" src={Appointment2} alt="" />
+                                            <img class="img2" src={Appointment3} alt="" />
+                                            <img class="img3" src={Appointment4} alt="" />
+                                            <img class="img4" src={Appointment5} alt="" />
+                                            <img class="img5" src={Appointment6} alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <GoToTopButton />
         </>
     );
 }

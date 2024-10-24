@@ -54,7 +54,8 @@ const ContainerNav = () => {
                                     FAQ's
                                 </span>
                                 </NavDropdown.Item>
-                            <NavDropdown.Item className='nav_links' href="#Booking">
+                            <NavDropdown.Item className='nav_links' 
+                            to="/Reservation" as={Link}>
                                 <span className='span_down_links'>
                                     Booking
                                 </span>

@@ -8,8 +8,10 @@ import SharpeImgTwo from "../assets/sharpe2.png";
 import SharpeImgThree from "../assets/sharpe3.png";
 import SharpeImgFour from "../assets/sharpe4.png";
 import './about.css';
+import GoToTopButton from '../components/buttonGoToTop/ButtonGoToTop';
 const About = () => {
     return (
+        <>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-30">
@@ -113,6 +115,8 @@ const About = () => {
                 </div>
             </div>
         </div>
+        <GoToTopButton/>
+        </>
     );
 }
 

@@ -6,7 +6,7 @@ import ContactForm from '../components/ContactForm/ContactForm';
 import SharpOne from '../assets/sharpe5.png';
 import SharpTwo from '../assets/sharpe6.png';
 import SharpThree from '../assets/sharpe7.png';
-
+import GoToTopButton from '../components/buttonGoToTop/ButtonGoToTop';
 const Contact = () => {
     return (
         <>
@@ -72,6 +72,7 @@ const Contact = () => {
                     </div>
                 </div>
             </section>
+            <GoToTopButton/>
         </>
     );
 }

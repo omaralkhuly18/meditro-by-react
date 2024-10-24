@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import './ButtonGoToTop.css'; // استيراد ملف CSS للتنسيق
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import './ButtonGoToTop.css';
 
 const GoToTopButton = () => {
     const [isVisible, setIsVisible] = useState(false);
 
     // وظيفة التحكم في الظهور
     const toggleVisibility = () => {
-        if (window.pageYOffset > 300) {
+        if (window.scrollY  > 300) {
             setIsVisible(true);
         } else {
             setIsVisible(false);
@@ -33,7 +35,7 @@ const GoToTopButton = () => {
         <div className="scroll-to-top">
             {isVisible && (
                 <button onClick={scrollToTop} className="go-to-top-button">
-                    ↑
+                    <FontAwesomeIcon icon={faArrowUp} />
                 </button>
             )}
         </div>
