@@ -36,14 +36,14 @@ const Booking = () => {
                             </Dropdown.Menu>
                         </Dropdown>
                     </div>
-                    <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Your Name" />
+                    <div className="form-group input_div">
+                        <input type="text" className="form-control" placeholder="Your Name" required />
                     </div>
-                    <div className="form-group">
-                        <input type="number" className="form-control" placeholder="Phone Numbers" />
+                    <div className="form-group input_div">
+                        <input type="number" className="form-control" placeholder="Phone Numbers" required />
                     </div>
-                    <div className="form-group">
-                        <input type="date" className="form-control control_date" />
+                    <div className="form-group input_div">
+                        <input type="date" className="form-control control_date" required />
                     </div>
                     <button type="submit" className="btn btn-secondary btn_secondary btn-lg">Appointment Now</button>
                 </form>

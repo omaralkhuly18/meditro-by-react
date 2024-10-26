@@ -72,6 +72,16 @@ a.dropdown-item {
     text-align: right;
 }
 
+.input_div{
+    margin-bottom: 20px;
+}
+
+.input_div .form-control{
+    border: 1px solid;
+    border-color: rgba(86, 90, 207, 0.3);
+    height: 50px;
+}
+
 button.btn_secondary{
     height: 50px;
     width: 350px;
