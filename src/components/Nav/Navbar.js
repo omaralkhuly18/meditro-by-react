@@ -16,7 +16,7 @@ const ContainerNav = () => {
         <Navbar expand="lg">
             <Container>
                 <Navbar.Brand>
-                    <link to="/home"><img src={Logo} alt="Logo" /></link>
+                    <Link to="/home"><img src={Logo} alt="Logo" /></Link>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
                     <div className="menu-icon">

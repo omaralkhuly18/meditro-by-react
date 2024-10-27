@@ -40,7 +40,7 @@ const Banner = () => {
     return (
         <div className="container">
             <div className="page-banner-entry text-center page_banner_entry">
-                <h1>Contact Us</h1>
+                <h1>{getPageName()}</h1>
                 <nav aria-label="breadcrumb" className="breadcrumb-row breadcrumb_row">
                     <ul className="breadcrumb">
                         <li className="breadcrumb_item">
