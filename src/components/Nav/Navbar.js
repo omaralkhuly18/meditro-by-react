@@ -16,7 +16,7 @@ const ContainerNav = () => {
         <Navbar expand="lg">
             <Container>
                 <Navbar.Brand>
-                    <img src={Logo} alt="Logo" />
+                    <link to="/home"><img src={Logo} alt="Logo" /></link>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
                     <div className="menu-icon">
@@ -44,12 +44,16 @@ const ContainerNav = () => {
                                     About Us
                                 </span>
                                 </NavDropdown.Item>
-                            <NavDropdown.Item className='nav_links' href="#Team">
+                            <NavDropdown.Item className='nav_links'
+                            as={Link}
+                            to="/Team">
                                 <span className='span_down_links'>
                                     Our Team
                                 </span>
                                 </NavDropdown.Item>
-                            <NavDropdown.Item className='nav_links' href="#FAQ">
+                            <NavDropdown.Item className='nav_links'
+                            as={Link}
+                            to="/FAQ">
                                 <span className='span_down_links'>
                                     FAQ's
                                 </span>
@@ -60,12 +64,16 @@ const ContainerNav = () => {
                                     Booking
                                 </span>
                                 </NavDropdown.Item>
-                            <NavDropdown.Item className='nav_links' href="#Error">
+                            <NavDropdown.Item className='nav_links'
+                            as={Link}
+                            to="/Error">
                                 <span className='span_down_links'>
                                     Error 404
                                 </span>
                                 </NavDropdown.Item>
-                            <NavDropdown.Item className='nav_links' href="#sign">
+                            <NavDropdown.Item className='nav_links'
+                            as={Link}
+                            to="/sign">
                                 <span className='span_down_links'>
                                     Login / Register
                                 </span>
@@ -80,12 +88,16 @@ const ContainerNav = () => {
                             onMouseEnter={() => setShowServices(true)}
                             onMouseLeave={() => setShowServices(false)}
                         >
-                            <NavDropdown.Item className='nav_links' href="#Services">
+                            <NavDropdown.Item className='nav_links'
+                            as={Link}
+                            to="/Services">
                                 <span className='span_down_links'>
                                     Services
                                 </span>
                                 </NavDropdown.Item>
-                            <NavDropdown.Item className='nav_links' href="#ServicesDetails">
+                            <NavDropdown.Item className='nav_links'
+                            as={Link}
+                            to="/ServicesDetails">
                                 <span className='span_down_links'>
                                     Services Details
                                 </span>
@@ -100,12 +112,16 @@ const ContainerNav = () => {
                             onMouseEnter={() => setShowBlog(true)}
                             onMouseLeave={() => setShowBlog(false)}
                         >
-                            <NavDropdown.Item className='nav_links' href="#Blog">
+                            <NavDropdown.Item className='nav_links'
+                            as={Link}
+                            to="/Blog">
                                 <span className='span_down_links'>
                                     Blog
                                 </span>
                                 </NavDropdown.Item>
-                            <NavDropdown.Item className='nav_links' href="#BlogDetails">
+                            <NavDropdown.Item className='nav_links'
+                            as={Link}
+                            to="/BlogDetails">
                                 <span className='span_down_links'>
                                     Blog Details
                                 </span>
@@ -120,7 +136,7 @@ const ContainerNav = () => {
                             <FontAwesomeIcon icon={faPhone} className="color_icon me-3" />
                             (+01) 999 888 777
                         </Link>
-                        <Link to="/contact_button">
+                        <Link to="/Contact">
                             <button>
                                 <span className="span_text">Contact Us</span>
                                 <FontAwesomeIcon className="span_icon" icon={faChevronRight} />
