@@ -2,8 +2,17 @@ import React from 'react';
 import './home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
+// استيراد مكونات Swiper
+import { Swiper, SwiperSlide } from "swiper/react";
+// استيراد أنماط Swiper
+import "swiper/css";
+import "swiper/css/pagination";
+// استيراد وحدة Pagination
+
+import { Pagination } from "swiper/modules";
 import Booking from '../components/Booking/Booking';
-import About from "./about";
+import AboutUs from '../components/AboutUs/AboutUs';
 import ContactForm from '../components/ContactForm/ContactForm';
 import GoToTopButton from '../components/buttonGoToTop/ButtonGoToTop';
 
@@ -45,7 +54,7 @@ const Home = () => {
                 <img className='img_inm4 subscriber' src={ImgInmaFour} />
                 <img className='img_inm5 subscriber' src={ImgInmaFive} />
             </header>
-            <About />
+            <AboutUs />
             <section id="contact-section">
                 <h3>Contact Us</h3>
                 <ContactForm />
@@ -95,6 +104,43 @@ const Home = () => {
                                     <FontAwesomeIcon icon={faArrowRight} className='btn-icon-bx' />
                                 </a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div className="container">
+                    <div className="row">
+                        {/* قائمة العناصر الثابتة */}
+                        <div className="col-lg-5 col-md-4 col-sm-12">
+                            <h6>Html</h6>
+                            <h6>Css</h6>
+                            <h6>JavaScript</h6>
+                            <h6>React JS</h6>
+                        </div>
+
+                        {/* قسم شريط التمرير */}
+                        <div className="col-lg-5 col-md-4 col-sm-12">
+                            <Swiper
+                                slidesPerView={3}           // عدد الشرائح المرئية في نفس الوقت
+                                spaceBetween={30}           // المسافة بين كل شريحة وأخرى
+                                pagination={{
+                                    clickable: true,          // تفعيل النقاط وجعلها قابلة للنقر
+                                }}
+                                modules={[Pagination]}       // تضمين وحدة Pagination
+                                className="mySwiper"
+                            >
+                                {/* الشرائح */}
+                                <SwiperSlide>Slide 1</SwiperSlide>
+                                <SwiperSlide>Slide 2</SwiperSlide>
+                                <SwiperSlide>Slide 3</SwiperSlide>
+                                <SwiperSlide>Slide 4</SwiperSlide>
+                                <SwiperSlide>Slide 5</SwiperSlide>
+                                <SwiperSlide>Slide 6</SwiperSlide>
+                                <SwiperSlide>Slide 7</SwiperSlide>
+                                <SwiperSlide>Slide 8</SwiperSlide>
+                                <SwiperSlide>Slide 9</SwiperSlide>
+                            </Swiper>
                         </div>
                     </div>
                 </div>

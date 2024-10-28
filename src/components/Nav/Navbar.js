@@ -114,7 +114,7 @@ const ContainerNav = () => {
                         >
                             <NavDropdown.Item className='nav_links'
                             as={Link}
-                            to="/Blog">
+                            to="/Blogs">
                                 <span className='span_down_links'>
                                     Blog
                                 </span>

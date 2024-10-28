@@ -6,7 +6,7 @@ const Layouts = () => {
     return(
         <Fragment>
             <ContainerNav/>
-            <main>
+            <main style={{paddingTop:'70px'}}>
                 <Outlet/>
             </main>
             <ContainerFooter/>

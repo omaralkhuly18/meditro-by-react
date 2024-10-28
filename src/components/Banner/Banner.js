@@ -26,8 +26,8 @@ const Banner = () => {
                 return 'Services';
             case '/ServicesDetails':
                 return 'Services Details';
-            case '/Blog':
-                return 'Blog';
+            case '/Blogs':
+                return 'Blogs';
             case '/BlogDetails':
                 return 'Blog Details';
             case '/Contact':
