@@ -355,7 +355,7 @@ img.img_inm5 {
     }
 }
 
-.appointment-thumb .img_par{
+.appointment-thumb .img_par {
     border-style: none;
     height: auto;
     max-width: 100%;
@@ -405,66 +405,199 @@ img.img_inm5 {
 
 #app {
     height: 100%;
-  }
-  html,
-  body {
+}
+
+html,
+body {
     position: relative;
     height: 100%;
-  }
-  
-  body {
+}
+
+body {
     background: #eee;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #000;
     margin: 0;
     padding: 0;
-  }
-  
-  .swiper {
+}
+
+.swiper {
     width: 100%;
     height: 100%;
-  }
-  
-  .swiper-slide {
+}
+
+.swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
-  
-    /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .swiper-slide img {
+}
+
+.swiper-slide img {
     display: block;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+.swiper-pagination {
+    display: none;
+}
+
+.mySwiper {
+    padding: 0 0 0 3%;
+}
+
+.service_wraper {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding-left: calc((100% - 1200px) / 2);
+}
+
+.heading-bx {
+    margin-bottom: 45px;
+}
+
+.heading-bx .title-ext {
+    color: #f17732;
+    font-weight: 700;
+    display: inline-block;
+    padding: 3px 15px;
+    background-position: center;
+    background-repeat: repeat;
+    margin-bottom: 15px;
+}
+
+.heading-bx h2.title,
+.heading-bx .title.h2 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #1f2278;
+}
+
+.heading-bx p {
+    padding-top: 5px;
+    font-weight: 500;
+}
+
+.btn_secondary.shadow {
+    box-shadow: 0px 5px 20px 0px rgba(241, 119, 50, 0.3) !important;
+}
+
+.btn_secondary {
+    width: 150px;
+    height: 50px;
+    background-color: #f17732 !important;
+    border: 1px solid #565acf3d !important;
+    color: #fff;
+}
+
+.feature-bx2 {
+    border-radius: 20px;
+    background-color: #fff;
+    z-index: 1;
+    overflow: hidden;
+    padding: 40px;
+    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.08);
+    background-image: url(../assets/swiper_serv.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.service_wraper .feature-container {
+    margin: 15px;
+}
+
+.feature-bx2 .feature-box-xl {
+    display: inline-block;
+    text-align: center;
+    background: #fff;
+    border: 2px solid rgba(86, 90, 207, 0.1);
+    border-radius: 13px;
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+}
+
+.icon-content {
+    overflow: hidden;
+}
+
+span.icon-cell {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-  }
-  .swiper-pagination {
-    display: none;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ttr-title{
+    font-size: 28px;
+    font-weight: 700;
+    color: #1f2278;
+}
+
+.feature-bx2 .icon-content p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.feature-bx2:hover .btn {
+    background-color: #565acf;
+    border-color: #565acf;
+    color: #fff;
+}
+
+.feature-bx2:hover .feature-box-xl i,
+.feature-bx2:hover .feature-box-xl img {
+    -webkit-animation: vibrate 0.5s alternate;
+    animation: vibrate 0.5s alternate;
+}
+
+@keyframes vibrate{
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    0%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
 
 @media only screen and (max-width: 1380px) {
     .appointment-thumb .images-group .img1 {
         height: 400px;
         right: 20px;
     }
+
     .appointment-thumb .images-group .img2 {
         left: 93px;
         width: 80px;
         bottom: 240px;
     }
+
     .appointment-thumb .images-group .img3 {
         right: 225px;
         width: 70px;
     }
+
     .appointment-thumb .images-group .img4 {
         left: 40px;
         width: 50px;
     }
+
     .appointment-thumb .images-group .img5 {
         right: 80px;
         width: 80px;
@@ -475,19 +608,23 @@ img.img_inm5 {
     .appointment-thumb .images-group .img1 {
         height: 180px;
     }
+
     .appointment-thumb .images-group .img2 {
         left: 39px;
         width: 50px;
         bottom: 110px;
     }
+
     .appointment-thumb .images-group .img3 {
         right: 110px;
         width: 40px;
     }
+
     .appointment-thumb .images-group .img4 {
         left: 15px;
         width: 30px;
     }
+
     .appointment-thumb .images-group .img5 {
         right: 30px;
         width: 60px;

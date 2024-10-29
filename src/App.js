@@ -6,6 +6,8 @@ import About from "./pages/about";
 import Contact from './pages/Contact';
 import Reservation from './pages/Reservation';
 import Blogs from './pages/Blog';
+import TestJs from './pages/Test';
+import Services from './pages/Services';
 import Layouts from './components/Layout/Layouts';
 import { createBrowserRouter, createRoutesFromElements , Route, RouterProvider , Navigate} from 'react-router-dom';
 
@@ -23,6 +25,8 @@ const routes = createBrowserRouter(
         <Route path="Contact" element={<Contact />} />
         <Route path="Reservation" element={<Reservation />} />
         <Route path="Blogs" element={<Blogs />} />
+        <Route path='TestJs' element={<TestJs/>}/>
+        <Route path='Services' element={<Services/>}/>
       </Route>
     </Route>
   )

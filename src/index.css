@@ -98,3 +98,8 @@ input{
   color: #333;
   font-size: 17px;
 }
+
+.section-sp1 {
+  padding-top: 100px;
+  padding-bottom: 70px;
+}

@@ -132,7 +132,7 @@ const ContainerNav = () => {
                         <Link to="/search">
                             <FontAwesomeIcon icon={faSearch} className="color_icon" />
                         </Link>
-                        <Link to="/phone" className="display_none">
+                        <Link to="/TestJs" className="display_none">
                             <FontAwesomeIcon icon={faPhone} className="color_icon me-3" />
                             (+01) 999 888 777
                         </Link>

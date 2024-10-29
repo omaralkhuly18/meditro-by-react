@@ -12,7 +12,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt , faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import "./Blog.css"
 import Banner from '../components/Banner/Banner';
-import GoToTopButton from '../components/buttonGoToTop/ButtonGoToTop';
 const Blogs = () => {
     return (
         <>
@@ -308,7 +307,6 @@ const Blogs = () => {
                     </div>
                 </div>
             </section>
-            <GoToTopButton />
         </>
     );
 }

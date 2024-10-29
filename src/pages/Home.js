@@ -14,8 +14,6 @@ import { Pagination } from "swiper/modules";
 import Booking from '../components/Booking/Booking';
 import AboutUs from '../components/AboutUs/AboutUs';
 import ContactForm from '../components/ContactForm/ContactForm';
-import GoToTopButton from '../components/buttonGoToTop/ButtonGoToTop';
-
 import ImgOne from '../assets/bg_img.png';
 
 import ImgInmaOne from '../assets/img_inemation1.png';
@@ -30,6 +28,12 @@ import Appointment3 from '../assets/appointment3.png';
 import Appointment4 from '../assets/appointment4.png';
 import Appointment5 from '../assets/appointment5.png';
 import Appointment6 from '../assets/appointment6.png';
+
+import Stethoscope from '../assets/stethoscope.png'
+import FirstAidKit from '../assets/first-aid-kit.png';
+import Syringe from '../assets/syringe.png';
+import MedicineBottle from '../assets/MedicineBottle.png';
+import Ambulance from '../assets/Ambulance.png' ;
 const Home = () => {
     return (
         <>
@@ -108,22 +112,27 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section>
+            <section className='section-area section-sp1 
+            service-wraper service_wraper'>
                 <div className="container">
-                    <div className="row">
+                    <div className="row align-items-center">
                         {/* قائمة العناصر الثابتة */}
-                        <div className="col-lg-5 col-md-4 col-sm-12">
-                            <h6>Html</h6>
-                            <h6>Css</h6>
-                            <h6>JavaScript</h6>
-                            <h6>React JS</h6>
+                        <div className="col-xl-4 col-lg-7 mb-30">
+                            <div className="heading-bx">
+                                <h6 className="title-ext">Services</h6>
+                                <h2 className="title">We Cover A Big Variety Of Medical Services</h2>
+                                <p>We provide the special tips and advice’s of heath care treatment and high level of best.</p>
+                            </div>
+                            <a href="#" className="btn btn-secondary btn_secondary btn-lg shadow">
+                                All Services
+                            </a>
                         </div>
 
                         {/* قسم شريط التمرير */}
-                        <div className="col-lg-5 col-md-4 col-sm-12">
+                        <div className="col-xl-8 mb-15">
                             <Swiper
                                 slidesPerView={3}           // عدد الشرائح المرئية في نفس الوقت
-                                spaceBetween={30}           // المسافة بين كل شريحة وأخرى
+                                spaceBetween={20}           // المسافة بين كل شريحة وأخرى
                                 pagination={{
                                     clickable: true,          // تفعيل النقاط وجعلها قابلة للنقر
                                 }}
@@ -131,40 +140,101 @@ const Home = () => {
                                 className="mySwiper"
                             >
                                 {/* الشرائح */}
-                                <SwiperSlide>Slide 1</SwiperSlide>
-                                <SwiperSlide>Slide 2</SwiperSlide>
-                                <SwiperSlide>Slide 3</SwiperSlide>
-                                <SwiperSlide>Slide 4</SwiperSlide>
-                                <SwiperSlide>Slide 5</SwiperSlide>
-                                <SwiperSlide>Slide 6</SwiperSlide>
-                                <SwiperSlide>Slide 7</SwiperSlide>
-                                <SwiperSlide>Slide 8</SwiperSlide>
-                                <SwiperSlide>Slide 9</SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="feature-container feature-bx2 feature1">
+                                        <div className="feature-box-xl mb-30">
+                                            <span className="icon-cell">
+                                                <img src={Stethoscope}/>
+                                            </span>
+                                        </div>
+                                        <div className="icon-content">
+                                            <h3 className="ttr-title">Diagnostics</h3>
+                                            <p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
+                                            <a href="service-detail.html" className="btn btn-primary light">View More</a>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="feature-container feature-bx2 feature2">
+                                        <div className="feature-box-xl mb-20">
+                                            <span className="icon-cell">
+                                                <img src={MedicineBottle}/>
+                                            </span>
+                                        </div>
+                                        <div className="icon-content">
+                                            <h3 className="ttr-title">Treatment</h3>
+                                            <p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
+                                            <a href="service-detail.html" className="btn btn-primary light">View More</a>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="feature-container feature-bx2 feature3">
+                                        <div className="feature-box-xl mb-20">
+                                            <span className="icon-cell">
+                                            <img src={FirstAidKit}/>
+                                            </span>
+                                        </div>
+                                        <div className="icon-content">
+                                            <h3 className="ttr-title">Surgery</h3>
+                                            <p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
+                                            <a href="service-detail.html" className="btn btn-primary light">View More</a>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="feature-container feature-bx2 feature1">
+                                        <div className="feature-box-xl mb-20">
+                                            <span className="icon-cell">
+                                            <img src={Syringe}/>
+                                            </span>
+                                        </div>
+                                        <div className="icon-content">
+                                            <h3 className="ttr-title">Vaccine</h3>
+                                            <p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
+                                            <a href="service-detail.html" className="btn btn-primary light">View More</a>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="feature-container feature-bx2 feature2">
+                                        <div className="feature-box-xl mb-20">
+                                            <span className="icon-cell">
+                                                <img src={Ambulance}/>
+                                            </span>
+                                        </div>
+                                        <div className="icon-content">
+                                            <h3 className="ttr-title">Emergency</h3>
+                                            <p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
+                                            <a href="service-detail.html" className="btn btn-primary light">View More</a>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
                             </Swiper>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section-area account-wraper1">
-                <div class="container-fluid">
-                    <div class="appointment-inner appointment_inner section-sp2">
-                        <div class="container">
-                            <div class="row align-items-center">
-                                <div class="col-xl-5 col-lg-6 col-md-6">
-                                    <div class="appointment-form form-wraper">
-                                        <h3 class="title">Book Appointment</h3>
+            <section className="section-area account-wraper1">
+                <div className="container-fluid">
+                    <div className="appointment-inner appointment_inner section-sp2">
+                        <div className="container">
+                            <div className="row align-items-center">
+                                <div className="col-xl-5 col-lg-6 col-md-6">
+                                    <div className="appointment-form form-wraper">
+                                        <h3 className="title">Book Appointment</h3>
                                         <Booking />
                                     </div>
                                 </div>
-                                <div class="col-xl-7 col-lg-6 col-md-6">
-                                    <div class="appointment-thumb">
+                                <div className="col-xl-7 col-lg-6 col-md-6">
+                                    <div className="appointment-thumb">
                                         <img className='img_par' src={Appointment1} alt="" />
-                                        <div class="images-group">
-                                            <img class="img1" src={Appointment2} alt="" />
-                                            <img class="img2" src={Appointment3} alt="" />
-                                            <img class="img3" src={Appointment4} alt="" />
-                                            <img class="img4" src={Appointment5} alt="" />
-                                            <img class="img5" src={Appointment6} alt="" />
+                                        <div className="images-group">
+                                            <img className="img1" src={Appointment2} alt="" />
+                                            <img className="img2" src={Appointment3} alt="" />
+                                            <img className="img3" src={Appointment4} alt="" />
+                                            <img className="img4" src={Appointment5} alt="" />
+                                            <img className="img5" src={Appointment6} alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -173,7 +243,6 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <GoToTopButton />
         </>
     );
 }

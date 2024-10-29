@@ -9,7 +9,6 @@ import { faTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-s
 import SharpOne from '../assets/sharpe5.png';
 import SharpTwo from '../assets/sharpe6.png';
 import SharpThree from '../assets/sharpe7.png';
-import GoToTopButton from '../components/buttonGoToTop/ButtonGoToTop';
 const Contact = () => {
     return (
         <>
@@ -118,7 +117,6 @@ const Contact = () => {
                     </div>
                 </div>
             </section>
-            <GoToTopButton />
         </>
     );
 }
