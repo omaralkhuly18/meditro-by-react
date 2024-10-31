@@ -8,8 +8,10 @@ import Reservation from './pages/Reservation';
 import Blogs from './pages/Blog';
 import TestJs from './pages/Test';
 import Services from './pages/Services';
+import DetailsPage from './components/Booking/DetailsPage';
 import Layouts from './components/Layout/Layouts';
-import { createBrowserRouter, createRoutesFromElements , Route, RouterProvider , Navigate} from 'react-router-dom';
+import { createBrowserRouter, createRoutesFromElements , Route, RouterProvider , Navigate} 
+from 'react-router-dom';
 
 // يجب أن يكون createRoutesFromElements (جمع Elements)
 const routes = createBrowserRouter(
@@ -27,6 +29,7 @@ const routes = createBrowserRouter(
         <Route path="Blogs" element={<Blogs />} />
         <Route path='TestJs' element={<TestJs/>}/>
         <Route path='Services' element={<Services/>}/>
+        <Route path='DetailsPage' element={<DetailsPage/>}/>
       </Route>
     </Route>
   )

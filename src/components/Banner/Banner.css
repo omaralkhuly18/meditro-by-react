@@ -4,7 +4,7 @@
     display: grid;
     align-items: center;
 }
-.page_banner_entry h1 {
+.page_banner_entry .banner_text {
     color: #1f2278;
     font-size: 72px;
     font-weight: 700;
@@ -84,6 +84,9 @@
 
 @media screen and (max-width: 575px) and (min-width: 230px) {
     .breadcrumb_row ul {
-        width: 60%;
+        width: 85%;
+    }
+    .page_banner_entry .banner_text {
+        font-size: 50px;
     }
 }

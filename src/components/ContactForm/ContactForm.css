@@ -68,6 +68,25 @@ section#contact-section h3{
     background-color: #0056b3;
 }
 
-/* .input_contact{
-    display: block;
-} */
+.success-message {
+    position: fixed;
+    top: 0;
+    background-color: #0056b3;
+    z-index: 3000;
+    width: 30%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 8px;
+    opacity: 0.7;
+    font-size: 26px;
+    font-weight: 700;
+}
+@media screen and (max-width:770px) and (min-width:230px){
+    .success-message {
+        width: 100%;
+        top: 5px;
+    }
+}
