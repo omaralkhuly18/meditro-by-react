@@ -33,7 +33,7 @@ const Banner = () => {
             case '/Contact':
                 return 'Contact Us';
                 case '/DetailsPage':
-                    return 'Appointment Details';
+                    return 'Booking Details';
             default:
                 return '';
         }

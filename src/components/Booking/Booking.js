@@ -20,7 +20,7 @@ const Booking = () => {
     const validateForm = () => {
         const nameRegex = /^[a-zA-Z\s]{3,}$/; // يسمح بأحرف فقط (3 أحرف أو أكثر)
         const phoneRegex = /^(\+?\d{1,4}[-.\s]?)?(\(?\d{3}\)?[-.\s]?)?\d{3}[-.\s]?\d{4}$/;
-         // يدعم أرقام الهاتف مع رموز الدولة
+        // يدعم أرقام الهاتف مع رموز الدولة
         //  هذا التعبير النمطي يمكنه مطابقة أرقام الهاتف بأحد التنسيقات التالية:
         //  1234567890
         //  123-456-7890
@@ -49,10 +49,14 @@ const Booking = () => {
         e.preventDefault();
         if (validateForm()) {
             // إذا كانت البيانات صالحة، يتم التنقل إلى صفحة التفاصيل
-            navigate('/DetailsPage', { state: 
-                { ...formData, 
-                    department: selectedDepartment, 
-                    doctor: selectedDoctor } });
+            navigate('/DetailsPage', {
+                state:
+                {
+                    ...formData,
+                    department: selectedDepartment,
+                    doctor: selectedDoctor
+                }
+            });
         }
     };
 
