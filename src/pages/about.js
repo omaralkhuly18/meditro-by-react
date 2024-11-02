@@ -4,6 +4,7 @@ import './about.css';
 import DoctorTeam from "../components/DoctorTeam/DoctorTeam";
 import Ratings from '../components/Ratings/Ratings';
 import Banner from '../components/Banner/Banner';
+import Testimonial from '../components/Testimonial/Testimonial';
 const About = () => {
     return (
         <>
@@ -11,6 +12,7 @@ const About = () => {
         <AboutUs/>
         <Ratings/>
         <DoctorTeam/>
+        <Testimonial/>
         </>
     );
 }
