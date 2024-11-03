@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import Slider from "react-slick";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 import ImgTestimonial from '../../assets/bgImgTestimonial.png';
 import DoctorOne from "../../assets/doctor1.jpg";
@@ -12,14 +14,74 @@ import DoctorThree from "../../assets/doctor3.jpeg";
 import DoctorFour from "../../assets/doctor4.jpeg";
 import DoctorFive from '../../assets/doctor5.jpeg';
 import DoctorSix from "../../assets/doctor6.jpeg";
+const NextArrow = (props) => {
+    const { onClick } = props;
+    return (
+        <div
+            className="swiper-button-next test-btn-next"
+            onClick={onClick}
+            style={{
+                position: "absolute",
+                top: "100px",
+                right: "auto",
+                left: "40px",
+                transform: "translateY(-50%)",
+                cursor: "pointer",
+                zIndex: 1,
+                color: "#fff",
+                fontSize: "24px",
+                backgroundColor: "#007bff",
+                borderRadius: "50%",
+                width: "40px",
+                height: "40px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+            }}
+        >
+            <FontAwesomeIcon icon={faArrowRight} />
+        </div>
+    );
+};
+
+const PrevArrow = (props) => {
+    const { onClick } = props;
+    return (
+        <div
+            className="swiper-button-prev test-btn-prev"
+            onClick={onClick}
+            style={{
+                position: "absolute",
+                top: "100px",
+                left: "-25px",
+                transform: "translateY(-50%)",
+                cursor: "pointer",
+                zIndex: 1,
+                color: "#fff",
+                fontSize: "24px",
+                backgroundColor: "#007bff",
+                borderRadius: "50%",
+                width: "40px",
+                height: "40px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+            }}
+        >
+            <FontAwesomeIcon icon={faArrowLeft} />
+        </div>
+    );
+};
 
 const Testimonial = () => {
     var settings = {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />
     };
     return (
         <>
