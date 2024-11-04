@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Services.css";
+import { Link } from 'react-router-dom';
 
 import Stethoscope from '../assets/stethoscope.png'
 import FirstAidKit from '../assets/first-aid-kit.png';
@@ -28,7 +29,7 @@ const Services = () => {
 								<div className="icon-content">
 									<h3 className="ttr-title">Diagnostics</h3>
 									<p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-									<a href="service-detail.html" className="btn btn-primary light">View More</a>
+									<Link to="/ServicesDetails/Diagnostics" className="btn btn-primary light">View More</Link>
 								</div>
 							</div>
 						</div>
@@ -42,7 +43,7 @@ const Services = () => {
 								<div className="icon-content">
 									<h3 className="ttr-title">Treatment</h3>
 									<p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-									<a href="service-detail.html" className="btn btn-primary light">View More</a>
+									<Link to="/ServicesDetails/Treatment" className="btn btn-primary light">View More</Link>
 								</div>
 							</div>
 						</div>
@@ -56,7 +57,7 @@ const Services = () => {
 								<div className="icon-content">
 									<h3 className="ttr-title">Surgery</h3>
 									<p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-									<a href="service-detail.html" className="btn btn-primary light">View More</a>
+									<Link to="/ServicesDetails/Surgery" className="btn btn-primary light">View More</Link>
 								</div>
 							</div>
 						</div>
@@ -70,7 +71,7 @@ const Services = () => {
 								<div className="icon-content">
 									<h3 className="ttr-title">Emergency</h3>
 									<p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-									<a href="service-detail.html" className="btn btn-primary light">View More</a>
+									<Link to="/ServicesDetails/Emergency" className="btn btn-primary light">View More</Link>
 								</div>
 							</div>
 						</div>
@@ -84,7 +85,7 @@ const Services = () => {
 								<div className="icon-content">
 									<h3 className="ttr-title">Vaccine</h3>
 									<p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-									<a href="service-detail.html" className="btn btn-primary light">View More</a>
+									<Link to="/ServicesDetails/Vaccine" className="btn btn-primary light">View More</Link>
 								</div>
 							</div>
 						</div>
@@ -98,7 +99,7 @@ const Services = () => {
 								<div className="icon-content">
 									<h3 className="ttr-title">Qualified Doctors</h3>
 									<p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-									<a href="service-detail.html" className="btn btn-primary light">View More</a>
+									<Link to="/ServicesDetails/Qualified Doctors" className="btn btn-primary light">View More</Link>
 								</div>
 							</div>
 						</div>

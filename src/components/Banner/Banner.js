@@ -1,21 +1,24 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
-import { useLocation } from 'react-router-dom'; // استيراد useLocation
+import { useLocation} from 'react-router-dom';
 import './Banner.css';
 
-const Banner = () => {
+const Banner = ({ serviceType }) => {
     const location = useLocation();
     
     // حدد اسم الصفحة بناءً على المسار الحالي
     const getPageName = () => {
+        if (serviceType) {
+            return `Services Details - ${serviceType}`; // إظهار serviceType إذا كان موجودًا
+        }
         switch (location.pathname) {
             case '/About':
                 return 'About Us';
             case '/Team':
                 return 'Our Team';
             case '/FAQ':
-                return "FAQ's";
+                return "Page Not Found";
             case '/Reservation':
                 return 'Booking';
             case '/Error':
@@ -24,8 +27,8 @@ const Banner = () => {
                 return 'Login / Register';
             case '/Services':
                 return 'Services';
-            case '/ServicesDetails':
-                return 'Services Details';
+            case  `/servicesDetails/${serviceType}`:
+                return `${serviceType}`;
             case '/Blogs':
                 return 'Blogs';
             case '/BlogDetails':

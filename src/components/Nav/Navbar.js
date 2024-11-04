@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 import Logo from '../../assets/logo.jpg';
 import './Nav.css';
 
-const ContainerNav = () => {
+const ContainerNav = ({ serviceType }) => {
     // حالات لإظهار كل قائمة Dropdown بشكل منفصل
     const [showPages, setShowPages] = useState(false);
     const [showServices, setShowServices] = useState(false);
@@ -97,7 +97,7 @@ const ContainerNav = () => {
                                 </NavDropdown.Item>
                             <NavDropdown.Item className='nav_links'
                             as={Link}
-                            to="/ServicesDetails">
+                            to={`/servicesDetails/${serviceType || 'default'}`}>
                                 <span className='span_down_links'>
                                     Services Details
                                 </span>

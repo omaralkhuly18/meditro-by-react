@@ -8,7 +8,10 @@ import Reservation from './pages/Reservation';
 import Blogs from './pages/Blog';
 import TestJs from './pages/Test';
 import Services from './pages/Services';
+import Team from './pages/Team';
+import PageNotFound from './pages/FAQ';
 import DetailsPage from './components/Booking/DetailsPage';
+import ServicesDetails from './pages/ServicesDetails';
 import Layouts from './components/Layout/Layouts';
 import { createBrowserRouter, createRoutesFromElements , Route, RouterProvider , Navigate} 
 from 'react-router-dom';
@@ -30,6 +33,9 @@ const routes = createBrowserRouter(
         <Route path='TestJs' element={<TestJs/>}/>
         <Route path='Services' element={<Services/>}/>
         <Route path='DetailsPage' element={<DetailsPage/>}/>
+        <Route path='Team' element={<Team/>}/>
+        <Route path='FAQ' element={<PageNotFound/>}/>
+        <Route path="/servicesDetails/:serviceType" element={<ServicesDetails/>}/>
       </Route>
     </Route>
   )
