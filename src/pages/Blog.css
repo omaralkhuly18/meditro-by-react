@@ -35,12 +35,14 @@
 }
 
 .post_meta li {
-    display: inline-block;
+    display: flex;
     position: relative;
     font-size: 14px;
     margin-right: 20px;
     color: #f17732;
     line-height: 1;
+    align-items: center;
+    cursor: pointer;
 }
 
 .post_meta li:last-child {

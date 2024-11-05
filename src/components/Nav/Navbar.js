@@ -7,7 +7,7 @@ import Logo from '../../assets/logo.jpg';
 import SearchBar from '../ModealSearch/ModealSearch';
 import './Nav.css';
 
-const ContainerNav = ({ serviceType }) => {
+const ContainerNav = ({ serviceType , blogType}) => {
     // حالات لإظهار كل قائمة Dropdown بشكل منفصل
     const [showPages, setShowPages] = useState(false);
     const [showServices, setShowServices] = useState(false);
@@ -122,7 +122,7 @@ const ContainerNav = ({ serviceType }) => {
                                 </NavDropdown.Item>
                             <NavDropdown.Item className='nav_links'
                             as={Link}
-                            to="/BlogsDetails">
+                            to={`/BlogsDetails/${blogType || 'default'}`}>
                                 <span className='span_down_links'>
                                     Blog Details
                                 </span>
