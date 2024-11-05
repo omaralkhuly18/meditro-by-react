@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
 import AboutTopLeft from '../../assets/about_us1.jpg';
 import AboutTopRight from '../../assets/about_us2.jpg';
 import AboutBottomLeft from '../../assets/about_us3.jpg';
@@ -107,9 +109,9 @@ const AboutUs = () => {
                             </div>
                         </div>
                     </div>
-                    <a class="btn btn-primary shadow" href="#">
+                    <Link class="btn btn-primary shadow" to="/services">
                         Read More
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

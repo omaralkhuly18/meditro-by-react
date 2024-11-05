@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
@@ -6,6 +8,12 @@ import Logo from '../../assets/logo.jpg';
 import './footer.css';
 
 const ContainerFooter = () => {
+        const navigate = useNavigate();
+
+    // دالة التنقل إلى تفاصيل المدونة
+    const handleBlogClick = (blogType) => {
+        navigate(`/BlogsDetails/${blogType}`);
+    };
     return (
         <footer>
             <div className='container'>
@@ -14,7 +22,7 @@ const ContainerFooter = () => {
 
                         <div className="widget widget_info">
                             <div className="footer_logo">
-                                <a href="#"><img src={Logo} /></a>
+                                <Link to="/Home"><img src={Logo} /></Link>
                             </div>
                             <div className="ft_contact">
                                 <p className='p_foo'>
@@ -38,22 +46,22 @@ const ContainerFooter = () => {
                             <h3 className="footer_title">Quick Links</h3>
                             <ul>
                                 <li>
-                                    <a className='a_footer_dis' href="#"><span>About Us</span></a>
+                                    <Link className='a_footer_dis' to="/about"><span>About Us</span></Link>
                                 </li>
                                 <li>
-                                    <a className='a_footer_dis' href="#"><span>Services</span></a>
+                                    <Link className='a_footer_dis' to="/Services"><span>Services</span></Link>
                                 </li>
                                 <li>
-                                    <a className='a_footer_dis' href="#"><span>Booking</span></a>
+                                    <Link className='a_footer_dis' to="/Reservation"><span>Booking</span></Link>
                                 </li>
                                 <li>
-                                    <a className='a_footer_dis' href="#"><span>Faq's</span></a>
+                                    <Link className='a_footer_dis' to="/FAQ"><span>Faq's</span></Link>
                                 </li>
                                 <li>
-                                    <a className='a_footer_dis' href="#"><span>Blogs</span></a>
+                                    <Link className='a_footer_dis' to="/Blog"><span>Blogs</span></Link>
                                 </li>
                                 <li>
-                                    <a className='a_footer_dis' href="#"><span>Out Team</span></a>
+                                    <Link className='a_footer_dis' to="/Team"><span>Out Team</span></Link>
                                 </li>
                             </ul>
                         </div>
@@ -63,22 +71,28 @@ const ContainerFooter = () => {
                             <h3 className="footer_title">Our Service</h3>
                             <ul>
                                 <li>
-                                    <a className='a_footer_dis' href="#"><span>Dental Care</span></a>
+                                    <button className='a_footer_dis' 
+                                    onClick={() => handleBlogClick('Dental Care')}>
+                                        <span>Dental Care</span></button>
                                 </li>
                                 <li>
-                                    <a className='a_footer_dis' href="#"><span>Cardiac Clinic</span></a>
+                                    <button className='a_footer_dis' 
+                                    onClick={() => handleBlogClick('Special Surgeon')}>
+                                        <span>Special Surgeon</span></button>
                                 </li>
-                                <li><a className='a_footer_dis' href="#"><span>Massege Therapy</span></a>
-                                </li>
-                                <li>
-                                    <a className='a_footer_dis' href="#"><span>Cardiology</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a className='a_footer_dis' href="#"><span>Precise Diagnosis</span></a>
+                                <li><button className='a_footer_dis' 
+                                onClick={() => handleBlogClick('Skin Surgeon')}>
+                                    <span>Skin Surgeon</span></button>
                                 </li>
                                 <li>
-                                    <a className='a_footer_dis' href="#"><span>Abmbulance Services</span></a>
+                                    <button className='a_footer_dis' 
+                                    onClick={() => handleBlogClick('Understand Health')}>
+                                        <span>Understand Health</span></button>
+                                </li>
+                                <li>
+                                    <button className='a_footer_dis' 
+                                    onClick={() => handleBlogClick('Dentist Regularly')}>
+                                        <span>Dentist Regularly</span></button>
                                 </li>
                             </ul>
                         </div>

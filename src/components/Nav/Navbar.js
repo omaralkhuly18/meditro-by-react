@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Navbar, Container, NavDropdown, Nav } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faPhone, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import {faPhone, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import {Link} from "react-router-dom";
 import Logo from '../../assets/logo.jpg';
+import SearchBar from '../ModealSearch/ModealSearch';
 import './Nav.css';
 
 const ContainerNav = ({ serviceType }) => {
@@ -73,7 +74,7 @@ const ContainerNav = ({ serviceType }) => {
                                 </NavDropdown.Item>
                             <NavDropdown.Item className='nav_links'
                             as={Link}
-                            to="/sign">
+                            to="/Authentication">
                                 <span className='span_down_links'>
                                     Login / Register
                                 </span>
@@ -106,7 +107,7 @@ const ContainerNav = ({ serviceType }) => {
 
                         {/* قائمة Blog */}
                         <NavDropdown
-                            title="Blog"
+                            title="Blogs"
                             id="basic-nav-dropdown"
                             show={showBlog}
                             onMouseEnter={() => setShowBlog(true)}
@@ -114,14 +115,14 @@ const ContainerNav = ({ serviceType }) => {
                         >
                             <NavDropdown.Item className='nav_links'
                             as={Link}
-                            to="/Blogs">
+                            to="/Blog">
                                 <span className='span_down_links'>
                                     Blog
                                 </span>
                                 </NavDropdown.Item>
                             <NavDropdown.Item className='nav_links'
                             as={Link}
-                            to="/BlogDetails">
+                            to="/BlogsDetails">
                                 <span className='span_down_links'>
                                     Blog Details
                                 </span>
@@ -129,10 +130,8 @@ const ContainerNav = ({ serviceType }) => {
                         </NavDropdown>
 
                         <Link to="/Contact">Contact Us</Link>
-                        <Link to="/search">
-                            <FontAwesomeIcon icon={faSearch} className="color_icon" />
-                        </Link>
-                        <Link to="/TestJs" className="display_none">
+                        <SearchBar/>
+                        <Link to="https://web.whatsapp.com/" target="_blank" className="display_none">
                             <FontAwesomeIcon icon={faPhone} className="color_icon me-3" />
                             (+01) 999 888 777
                         </Link>

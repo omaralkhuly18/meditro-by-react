@@ -6,12 +6,16 @@ import About from "./pages/about";
 import Contact from './pages/Contact';
 import Reservation from './pages/Reservation';
 import Blogs from './pages/Blog';
-import TestJs from './pages/Test';
+import BlogsDetails from './pages/BlogsDetails';
+import BlogDetailsSpicial from './pages/BlogDetailsSpicial';
+// import TestJs from './pages/Test';
 import Services from './pages/Services';
 import Team from './pages/Team';
 import PageNotFound from './pages/FAQ';
+import Authentication from './pages/Authentication';
 import DetailsPage from './components/Booking/DetailsPage';
 import ServicesDetails from './pages/ServicesDetails';
+import SearchBar from './components/ModealSearch/ModealSearch';
 import Layouts from './components/Layout/Layouts';
 import { createBrowserRouter, createRoutesFromElements , Route, RouterProvider , Navigate} 
 from 'react-router-dom';
@@ -29,11 +33,15 @@ const routes = createBrowserRouter(
         <Route path="About" element={<About />} />
         <Route path="Contact" element={<Contact />} />
         <Route path="Reservation" element={<Reservation />} />
-        <Route path="Blogs" element={<Blogs />} />
-        <Route path='TestJs' element={<TestJs/>}/>
+        <Route path="Blog" element={<Blogs />} />
+        <Route path="/BlogsDetails/:blogType" element={<BlogsDetails />} />
+        <Route path="/BlogDetailsSpicial/:doctorName" element={<BlogDetailsSpicial />} />
+        <Route path="/BlogDetailsSpicial/:doctorName" component={<BlogDetailsSpicial />} />
+        <Route path='SearchBar' element={<SearchBar/>}/>
         <Route path='Services' element={<Services/>}/>
         <Route path='DetailsPage' element={<DetailsPage/>}/>
         <Route path='Team' element={<Team/>}/>
+        <Route path='Authentication' element={<Authentication/>}/>
         <Route path='FAQ' element={<PageNotFound/>}/>
         <Route path="/servicesDetails/:serviceType" element={<ServicesDetails/>}/>
       </Route>

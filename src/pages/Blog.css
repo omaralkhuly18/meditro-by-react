@@ -78,15 +78,28 @@
 
 .outline_primary {
     width: 170px;
+    height: 50px;
     display: flex !important;
     align-items: center;
     justify-content: space-around;
     font-size: 18px !important;
+    background-color: white !important;
+    border: #1f2278 solid 1px;
+    border-radius: 8px !important;
+    color: #1f2278 !important;
+    transition: 0.5s; 
+}
+
+.outline_primary:hover {
+    background-color: #464bd7 !important;
+    border: #ffffff solid 1px !important;
+    color:  white !important;
 }
 
 .outline_primary svg {
     background-color: #565acf;
     color: white;
+    padding: 3%;
 }
 
 .pagination-bx .pagination {

@@ -1,8 +1,9 @@
-import React from 'react';
-import Banner from '../components/Banner/Banner';
+import React from "react";
+import { Link } from "react-router-dom";
+import Banner from "../components/Banner/Banner";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTwitter, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 import DoctorOne from "../assets/doctor1.jpg";
 import DoctorTwo from "../assets/doctor2.jpeg";
@@ -10,28 +11,30 @@ import DoctorThree from "../assets/doctor3.jpeg";
 import DoctorFour from "../assets/doctor4.jpeg";
 import DoctorFive from '../assets/doctor5.jpeg';
 import DoctorSix from "../assets/doctor6.jpeg";
+
 const Team = () => {
     return (
         <>
             <Banner />
             <section className='section-area team-wraper'>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="team-member mb-30">
-                                <div class="team-media">
+                <div className="container">
+                    <div className="row">
+                        {/* Doctor One */}
+                        <div className="col-lg-4 col-sm-6">
+                            <div className="team-member mb-30">
+                                <div className="team-media">
                                     <img src={DoctorOne} alt="" />
                                 </div>
-                                <div class="team-info">
-                                    <div class="team-info-comntent">
-                                        <h4 class="title">
-                                            Dr. Addition Smith
+                                <div className="team-info">
+                                    <div className="team-info-comntent">
+                                        <h4 className="title">
+                                            <Link to={`/BlogDetailsSpicial/${encodeURIComponent("Dr. Addition Smith")}`}>
+                                                Dr. Addition Smith
+                                            </Link>
                                         </h4>
-                                        <span class="text-secondary">
-                                            Dentist
-                                        </span>
+                                        <span className="text-secondary">Dentist</span>
                                     </div>
-                                    <ul class="social-media mt-3">
+                                    <ul className="social-media mt-3">
                                         <li>
                                             <a rel="noreferrer" target="_blank" href="https://twitter.com/">
                                                 <FontAwesomeIcon icon={faTwitter} className="icon twitter" />
@@ -51,21 +54,23 @@ const Team = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="team-member mb-30">
-                                <div class="team-media">
+
+                        {/* Doctor Two */}
+                        <div className="col-lg-4 col-sm-6">
+                            <div className="team-member mb-30">
+                                <div className="team-media">
                                     <img src={DoctorTwo} alt="" />
                                 </div>
-                                <div class="team-info">
-                                    <div class="team-info-comntent">
-                                        <h4 class="title">
-                                            Dr. Mahfuz Riad
+                                <div className="team-info">
+                                    <div className="team-info-comntent">
+                                        <h4 className="title">
+                                            <Link to={`/BlogDetailsSpicial/${encodeURIComponent("Dr. Mahfuz Riad")}`}>
+                                                Dr. Mahfuz Riad
+                                            </Link>
                                         </h4>
-                                        <span class="text-secondary">
-                                            Chiropractor
-                                        </span>
+                                        <span className="text-secondary">Chiropractor</span>
                                     </div>
-                                    <ul class="social-media mt-3">
+                                    <ul className="social-media mt-3">
                                         <li>
                                             <a rel="noreferrer" target="_blank" href="https://twitter.com/">
                                                 <FontAwesomeIcon icon={faTwitter} className="icon twitter" />
@@ -85,21 +90,23 @@ const Team = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="team-member mb-30">
-                                <div class="team-media">
+
+                        {/* Doctor Three */}
+                        <div className="col-lg-4 col-sm-6">
+                            <div className="team-member mb-30">
+                                <div className="team-media">
                                     <img src={DoctorThree} alt="" />
                                 </div>
-                                <div class="team-info">
-                                    <div class="team-info-comntent">
-                                        <h4 class="title">
-                                            Dr. David Benjamin
+                                <div className="team-info">
+                                    <div className="team-info-comntent">
+                                        <h4 className="title">
+                                            <Link to={`/BlogDetailsSpicial/${encodeURIComponent("Dr. David Benjamin")}`}>
+                                                Dr. David Benjamin
+                                            </Link>
                                         </h4>
-                                        <span class="text-secondary">
-                                            Cardiologist
-                                        </span>
+                                        <span className="text-secondary">Cardiologist</span>
                                     </div>
-                                    <ul class="social-media mt-3">
+                                    <ul className="social-media mt-3">
                                         <li>
                                             <a rel="noreferrer" target="_blank" href="https://twitter.com/">
                                                 <FontAwesomeIcon icon={faTwitter} className="icon twitter" />
@@ -119,21 +126,24 @@ const Team = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="team-member mb-30">
-                                <div class="team-media">
+
+                        {/* Repeat for remaining doctors */}
+                        {/* Doctor Four */}
+                        <div className="col-lg-4 col-sm-6">
+                            <div className="team-member mb-30">
+                                <div className="team-media">
                                     <img src={DoctorFour} alt="" />
                                 </div>
-                                <div class="team-info">
-                                    <div class="team-info-comntent">
-                                        <h4 class="title">
-                                            Dr. Addition Smith
+                                <div className="team-info">
+                                    <div className="team-info-comntent">
+                                        <h4 className="title">
+                                            <Link to={`/BlogDetailsSpicial/${encodeURIComponent("Dr. Addition Smith")}`}>
+                                                Dr. Addition Smith
+                                            </Link>
                                         </h4>
-                                        <span class="text-secondary">
-                                            Dentist
-                                        </span>
+                                        <span className="text-secondary">Dentist</span>
                                     </div>
-                                    <ul class="social-media mt-3">
+                                    <ul className="social-media mt-3">
                                         <li>
                                             <a rel="noreferrer" target="_blank" href="https://twitter.com/">
                                                 <FontAwesomeIcon icon={faTwitter} className="icon twitter" />
@@ -153,21 +163,23 @@ const Team = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="team-member mb-30">
-                                <div class="team-media">
+
+                        {/* Doctor Five */}
+                        <div className="col-lg-4 col-sm-6">
+                            <div className="team-member mb-30">
+                                <div className="team-media">
                                     <img src={DoctorFive} alt="" />
                                 </div>
-                                <div class="team-info">
-                                    <div class="team-info-comntent">
-                                        <h4 class="title">
-                                            Dr. Mahfuz Riad
+                                <div className="team-info">
+                                    <div className="team-info-comntent">
+                                        <h4 className="title">
+                                            <Link to={`/BlogDetailsSpicial/${encodeURIComponent("Dr. Mahfuz Riad")}`}>
+                                                Dr. Mahfuz Riad
+                                            </Link>
                                         </h4>
-                                        <span class="text-secondary">
-                                            Chiropractor
-                                        </span>
+                                        <span className="text-secondary">Chiropractor</span>
                                     </div>
-                                    <ul class="social-media mt-3">
+                                    <ul className="social-media mt-3">
                                         <li>
                                             <a rel="noreferrer" target="_blank" href="https://twitter.com/">
                                                 <FontAwesomeIcon icon={faTwitter} className="icon twitter" />
@@ -187,21 +199,23 @@ const Team = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="team-member mb-30">
-                                <div class="team-media">
+
+                        {/* Doctor Six */}
+                        <div className="col-lg-4 col-sm-6">
+                            <div className="team-member mb-30">
+                                <div className="team-media">
                                     <img src={DoctorSix} alt="" />
                                 </div>
-                                <div class="team-info">
-                                    <div class="team-info-comntent">
-                                        <h4 class="title">
-                                            Dr. David Benjamin
+                                <div className="team-info">
+                                    <div className="team-info-comntent">
+                                        <h4 className="title">
+                                            <Link to={`/BlogDetailsSpicial/${encodeURIComponent("Dr. David Benjamin")}`}>
+                                                Dr. David Benjamin
+                                            </Link>
                                         </h4>
-                                        <span class="text-secondary">
-                                            Cardiologist
-                                        </span>
+                                        <span className="text-secondary">Cardiologist</span>
                                     </div>
-                                    <ul class="social-media mt-3">
+                                    <ul className="social-media mt-3">
                                         <li>
                                             <a rel="noreferrer" target="_blank" href="https://twitter.com/">
                                                 <FontAwesomeIcon icon={faTwitter} className="icon twitter" />
@@ -226,6 +240,6 @@ const Team = () => {
             </section>
         </>
     );
-}
+};
 
 export default Team;

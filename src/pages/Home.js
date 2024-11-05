@@ -2,6 +2,7 @@ import React from 'react';
 import './home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { Link } from "react-router-dom";
 
 // استيراد مكونات Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -43,7 +44,7 @@ const Home = () => {
                         <div className='col-lg-7 col-md-6 col-sm-7 height_col'>
                             <h5>We Provide All Health Care Solution</h5>
                             <h2>Protect Your Health And Take Care To Of Your Health</h2>
-                            <button><a href='#'>Read More</a></button>
+                            <button><a href='/about'>Read More</a></button>
                         </div>
                         <div className='col-lg-5 col-md-6 col-sm-5'>
                             <div className='img_bg_one'>
@@ -77,10 +78,10 @@ const Home = () => {
                                     <h5 className="title text-secondary mb-10">Make Appointmnet</h5>
                                     <p>It is a long established fact that a reader will be distracted by the readable content of.</p>
                                 </div>
-                                <a href="" className="btn btn-primary btn_primary lights light">
+                                <Link to="/services" className="btn btn-primary btn_primary lights light">
                                     <span> View More </span>
                                     <FontAwesomeIcon icon={faArrowRight} className='btn-icon-bx' />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="col-lg-4 col-sm-6 mb-30">
@@ -90,10 +91,10 @@ const Home = () => {
                                     <h5 className="title text-secondary mb-10">Take Treatment</h5>
                                     <p>It is a long established fact that a reader will be distracted by the readable content of.</p>
                                 </div>
-                                <a href="" className="btn btn-primary btn_primary lights light">
+                                <Link to="/services" className="btn btn-primary btn_primary lights light">
                                     <span> View More </span>
                                     <FontAwesomeIcon icon={faArrowRight} className='btn-icon-bx' />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="col-lg-4 col-sm-6 mb-30">
@@ -103,10 +104,10 @@ const Home = () => {
                                     <h5 className="title text-secondary mb-10">Registration</h5>
                                     <p>It is a long established fact that a reader will be distracted by the readable content of.</p>
                                 </div>
-                                <a href="" className="btn btn-primary btn_primary lights light">
+                                <Link to="/services" className="btn btn-primary btn_primary lights light">
                                     <span> View More </span>
                                     <FontAwesomeIcon icon={faArrowRight} className='btn-icon-bx' />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -123,9 +124,9 @@ const Home = () => {
                                 <h2 className="title">We Cover A Big Variety Of Medical Services</h2>
                                 <p>We provide the special tips and advice’s of heath care treatment and high level of best.</p>
                             </div>
-                            <a href="#" className="btn btn-secondary btn_secondary btn-lg shadow">
+                            <Link to="/services" className="btn btn-secondary btn_secondary btn-lg shadow">
                                 All Services
-                            </a>
+                            </Link>
                         </div>
 
                         {/* قسم شريط التمرير */}
@@ -150,7 +151,7 @@ const Home = () => {
                                         <div className="icon-content">
                                             <h3 className="ttr-title">Diagnostics</h3>
                                             <p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-                                            <a href="service-detail.html" className="btn btn-primary light">View More</a>
+                                            <Link to="/ServicesDetails/Diagnostics" className="btn btn-primary light">View More</Link>
                                         </div>
                                     </div>
                                 </SwiperSlide>
@@ -164,7 +165,7 @@ const Home = () => {
                                         <div className="icon-content">
                                             <h3 className="ttr-title">Treatment</h3>
                                             <p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-                                            <a href="service-detail.html" className="btn btn-primary light">View More</a>
+                                           <Link to="/ServicesDetails/Treatment" className="btn btn-primary light">View More</Link>
                                         </div>
                                     </div>
                                 </SwiperSlide>
@@ -178,7 +179,7 @@ const Home = () => {
                                         <div className="icon-content">
                                             <h3 className="ttr-title">Surgery</h3>
                                             <p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-                                            <a href="service-detail.html" className="btn btn-primary light">View More</a>
+                                            <Link to="/ServicesDetails/Surgery" className="btn btn-primary light">View More</Link>
                                         </div>
                                     </div>
                                 </SwiperSlide>
@@ -192,7 +193,7 @@ const Home = () => {
                                         <div className="icon-content">
                                             <h3 className="ttr-title">Vaccine</h3>
                                             <p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-                                            <a href="service-detail.html" className="btn btn-primary light">View More</a>
+                                            <Link to="/ServicesDetails/Vaccine" className="btn btn-primary light">View More</Link>
                                         </div>
                                     </div>
                                 </SwiperSlide>
@@ -206,7 +207,7 @@ const Home = () => {
                                         <div className="icon-content">
                                             <h3 className="ttr-title">Emergency</h3>
                                             <p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-                                            <a href="service-detail.html" className="btn btn-primary light">View More</a>
+                                           <Link to="/ServicesDetails/Emergency" className="btn btn-primary light">View More</Link>
                                         </div>
                                     </div>
                                 </SwiperSlide>

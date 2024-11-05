@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { Link } from "react-router-dom";
 
 import DoctorOne from "../../assets/doctor1.jpg";
 import DoctorTwo from "../../assets/doctor2.jpeg";
@@ -31,7 +32,9 @@ const DoctorTeam = () => {
                                 <div className="team-info">
                                     <div className="team-info-content">
                                         <h4 className="title textDo">
-                                            Dr. Addition Smith
+                                            <Link to={`/BlogDetailsSpicial/${encodeURIComponent("Dr. Addition Smith")}`}>
+                                                Dr. Addition Smith
+                                            </Link>
                                         </h4>
                                         <span className="spanDo spanDo">
                                             Dentist
@@ -65,7 +68,9 @@ const DoctorTeam = () => {
                                 <div className="team-info">
                                     <div className="team-info-content">
                                         <h4 className="title textDo">
-                                            Dr. Mahfuz Riad
+                                            <Link to={`/BlogDetailsSpicial/${encodeURIComponent("Dr. Mahfuz Riad")}`}>
+                                                Dr. Mahfuz Riad
+                                            </Link>
                                         </h4>
                                         <span className="spanDo spanDo">
                                             Chiropractor
@@ -99,7 +104,9 @@ const DoctorTeam = () => {
                                 <div className="team-info">
                                     <div className="team-info-content">
                                         <h4 className="title textDo">
-                                            Dr. David Benjamin
+                                            <Link to={`/BlogDetailsSpicial/${encodeURIComponent("Dr. David Benjamin")}`}>
+                                                Dr. David Benjamin
+                                            </Link>
                                         </h4>
                                         <span className="spanDo">
                                             Cardiologist

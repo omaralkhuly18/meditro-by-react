@@ -1,5 +1,5 @@
-.a_footer_dis{
-    color: #444;
+.a_footer_dis {
+    color: #444 !important;
     display: block;
     font-size: 20px;
     font-weight: 500;
@@ -7,9 +7,12 @@
     padding: 6px 0;
     transition: 0.8s;
     position: relative;
+    background: none !important;
+    width: auto !important;
+    border: none !important;
 }
 .a_footer_dis:hover{
-    color: #565acf;
+    color: #565acf !important;
 }
 .footer_title{
     font-size: 24px;

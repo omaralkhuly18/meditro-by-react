@@ -1,16 +1,22 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
-import { useLocation} from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import './Banner.css';
 
-const Banner = ({ serviceType }) => {
+const Banner = ({ serviceType, blogType , doctorName}) => {
     const location = useLocation();
-    
+
     // حدد اسم الصفحة بناءً على المسار الحالي
     const getPageName = () => {
         if (serviceType) {
-            return `Services Details - ${serviceType}`; // إظهار serviceType إذا كان موجودًا
+            return `${serviceType}`; // إظهار serviceType إذا كان موجودًا
+        }
+        if (blogType) {
+            return `${blogType}`; // إظهار serviceType إذا كان موجودًا
+        }
+        if (doctorName) {
+            return `${doctorName}`; // إظهار serviceType إذا كان موجودًا
         }
         switch (location.pathname) {
             case '/About':
@@ -23,20 +29,14 @@ const Banner = ({ serviceType }) => {
                 return 'Booking';
             case '/Error':
                 return 'Error 404';
-            case '/sign':
-                return 'Login / Register';
             case '/Services':
                 return 'Services';
-            case  `/servicesDetails/${serviceType}`:
-                return `${serviceType}`;
-            case '/Blogs':
+            case '/Blog':
                 return 'Blogs';
-            case '/BlogDetails':
-                return 'Blog Details';
             case '/Contact':
                 return 'Contact Us';
-                case '/DetailsPage':
-                    return 'Booking Details';
+            case '/DetailsPage':
+                return 'Booking Details';
             default:
                 return '';
         }
@@ -64,4 +64,4 @@ const Banner = ({ serviceType }) => {
     );
 }
 
-export default Banner;
+export default Banner;
