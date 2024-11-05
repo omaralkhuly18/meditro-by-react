@@ -23,7 +23,7 @@ const Services = () => {
 							<div className="feature-container feature-bx2 feature1">
 								<div className="feature-box-xl mb-20">
 									<span className="icon-cell">
-										<img src={Stethoscope} />
+										<img alt="discrption" src={Stethoscope} />
 									</span>
 								</div>
 								<div className="icon-content">
@@ -37,7 +37,7 @@ const Services = () => {
 							<div className="feature-container feature-bx2 feature2">
 								<div className="feature-box-xl mb-20">
 									<span className="icon-cell">
-										<img src={FirstAidKit} />
+										<img alt="discrption" src={FirstAidKit} />
 									</span>
 								</div>
 								<div className="icon-content">
@@ -51,7 +51,7 @@ const Services = () => {
 							<div className="feature-container feature-bx2 feature3">
 								<div className="feature-box-xl mb-20">
 									<span className="icon-cell">
-										<img src={Syringe} />
+										<img alt="discrption" src={Syringe} />
 									</span>
 								</div>
 								<div className="icon-content">
@@ -65,7 +65,7 @@ const Services = () => {
 							<div className="feature-container feature-bx2 feature2">
 								<div className="feature-box-xl mb-20">
 									<span className="icon-cell">
-										<img src={MedicineBottle} />
+										<img alt="discrption" src={MedicineBottle} />
 									</span>
 								</div>
 								<div className="icon-content">
@@ -79,7 +79,7 @@ const Services = () => {
 							<div className="feature-container feature-bx2 feature3">
 								<div className="feature-box-xl mb-20">
 									<span className="icon-cell">
-										<img src={Ambulance} />
+										<img alt="discrption" src={Ambulance} />
 									</span>
 								</div>
 								<div className="icon-content">
@@ -93,7 +93,7 @@ const Services = () => {
 							<div className="feature-container feature-bx2 feature1">
 								<div className="feature-box-xl mb-20">
 									<span className="icon-cell">
-										<img src={QualifiedDoctors} />
+										<img alt="discrption" src={QualifiedDoctors} />
 									</span>
 								</div>
 								<div className="icon-content">

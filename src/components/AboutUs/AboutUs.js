@@ -18,13 +18,13 @@ const AboutUs = () => {
                     <div class="about-thumb-area">
                         <ul>
                             <li>
-                                <img class="about-thumb1" src={AboutTopLeft} alt="" />
+                                <img class="about-thumb1" src={AboutTopLeft} alt="discrption" />
                             </li>
                             <li>
-                                <img class="about-thumb2" src={AboutTopRight} alt="" />
+                                <img class="about-thumb2" src={AboutTopRight} alt="discrption" />
                             </li>
                             <li>
-                                <img class="about-thumb3" src={AboutBottomLeft} alt="" />
+                                <img class="about-thumb3" src={AboutBottomLeft} alt="discrption" />
                             </li>
                             <li>
                                 <div class="exp-bx">
@@ -56,7 +56,7 @@ const AboutUs = () => {
                             <div class="feature-container feature-bx1 feature1">
                                 <div class="icon-md">
                                     <span class="icon-cell">
-                                        <img src={SharpeImgOne}/>
+                                        <img src={SharpeImgOne} alt="discrption"/>
                                     </span>
                                 </div>
                                 <div class="icon-content">
@@ -70,7 +70,7 @@ const AboutUs = () => {
                             <div class="feature-container feature-bx1 feature2">
                                 <div class="icon-md">
                                     <span class="icon-cell">
-                                        <img src={SharpeImgTwo}/>
+                                        <img src={SharpeImgTwo} alt="discrption"/>
                                     </span>
                                 </div>
                                 <div class="icon-content">
@@ -84,7 +84,7 @@ const AboutUs = () => {
                             <div class="feature-container feature-bx1 feature3">
                                 <div class="icon-md">
                                     <span class="icon-cell">
-                                        <img src={SharpeImgThree}/>
+                                        <img src={SharpeImgThree} alt="discrption"/>
                                     </span>
                                 </div>
                                 <div class="icon-content">
@@ -98,7 +98,7 @@ const AboutUs = () => {
                             <div class="feature-container feature-bx1 feature4">
                                 <div class="icon-md">
                                     <span class="icon-cell">
-                                        <img src={SharpeImgFour}/>
+                                        <img src={SharpeImgFour} alt="discrption"/>
                                     </span>
                                 </div>
                                 <div class="icon-content">

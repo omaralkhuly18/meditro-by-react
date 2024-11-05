@@ -67,7 +67,7 @@ const Contact = () => {
                         <div className="col-lg-4 col-md-6 mb-30">
                             <div className="feature-container feature-bx4 feature4">
                                 <div className="icon-md feature-icon">
-                                    <img src={SharpOne} alt="" />
+                                    <img src={SharpOne} alt="discrption" />
                                 </div>
                                 <div className="icon-content">
                                     <h5 className="ttr-title">
@@ -85,7 +85,7 @@ const Contact = () => {
                         <div className="col-lg-4 col-md-6 mb-30">
                             <div className="feature-container feature-bx4 feature3">
                                 <div className="icon-md feature-icon">
-                                    <img src={SharpTwo} alt="" />
+                                    <img src={SharpTwo} alt="discrption" />
                                 </div><div className="icon-content">
                                     <h5 className="ttr-title">
                                         Email Address
@@ -102,7 +102,7 @@ const Contact = () => {
                         <div className="col-lg-4 col-md-6 mb-30">
                             <div className="feature-container feature-bx4 feature2">
                                 <div className="icon-md feature-icon">
-                                    <img src={SharpThree} alt="" />
+                                    <img src={SharpThree} alt="discrption" />
                                 </div>
                                 <div className="icon-content">
                                     <h5 className="ttr-title">

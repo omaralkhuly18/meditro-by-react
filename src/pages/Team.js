@@ -23,7 +23,7 @@ const Team = () => {
                         <div className="col-lg-4 col-sm-6">
                             <div className="team-member mb-30">
                                 <div className="team-media">
-                                    <img src={DoctorOne} alt="" />
+                                    <img src={DoctorOne} alt="discrption" />
                                 </div>
                                 <div className="team-info">
                                     <div className="team-info-comntent">
@@ -59,7 +59,7 @@ const Team = () => {
                         <div className="col-lg-4 col-sm-6">
                             <div className="team-member mb-30">
                                 <div className="team-media">
-                                    <img src={DoctorTwo} alt="" />
+                                    <img src={DoctorTwo} alt="discrption" />
                                 </div>
                                 <div className="team-info">
                                     <div className="team-info-comntent">
@@ -95,7 +95,7 @@ const Team = () => {
                         <div className="col-lg-4 col-sm-6">
                             <div className="team-member mb-30">
                                 <div className="team-media">
-                                    <img src={DoctorThree} alt="" />
+                                    <img src={DoctorThree} alt="discrption" />
                                 </div>
                                 <div className="team-info">
                                     <div className="team-info-comntent">
@@ -132,7 +132,7 @@ const Team = () => {
                         <div className="col-lg-4 col-sm-6">
                             <div className="team-member mb-30">
                                 <div className="team-media">
-                                    <img src={DoctorFour} alt="" />
+                                    <img src={DoctorFour} alt="discrption" />
                                 </div>
                                 <div className="team-info">
                                     <div className="team-info-comntent">
@@ -168,7 +168,7 @@ const Team = () => {
                         <div className="col-lg-4 col-sm-6">
                             <div className="team-member mb-30">
                                 <div className="team-media">
-                                    <img src={DoctorFive} alt="" />
+                                    <img src={DoctorFive} alt="discrption" />
                                 </div>
                                 <div className="team-info">
                                     <div className="team-info-comntent">
@@ -204,7 +204,7 @@ const Team = () => {
                         <div className="col-lg-4 col-sm-6">
                             <div className="team-member mb-30">
                                 <div className="team-media">
-                                    <img src={DoctorSix} alt="" />
+                                    <img src={DoctorSix} alt="discrption" />
                                 </div>
                                 <div className="team-info">
                                     <div className="team-info-comntent">

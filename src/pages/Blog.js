@@ -37,7 +37,7 @@ const Blogs = () => {
                                 <div className="post-media  post_media">
                                     <img
                                         src={ImgBlogsOne}
-                                        alt=""
+                                        alt="discrption"
                                         onClick={() => handleBlogClick('Dental Care')}
                                     />
                                 </div>
@@ -46,7 +46,7 @@ const Blogs = () => {
                                         <li className="author nameDoctor">
                                             <img
                                                 src={DoctorBlogsOne}
-                                                alt=""
+                                                alt="discrption"
                                                 onClick={() => handleDoctorClick('John Deo')}
                                             />
                                             <span onClick={() => handleDoctorClick('John Deo')}>John Deo</span>
@@ -78,7 +78,7 @@ const Blogs = () => {
                                 <div className="post-media  post_media">
                                     <img
                                         src={ImgBlogsTwo}
-                                        alt=""
+                                        alt="discrption"
                                         onClick={() => handleBlogClick('Special Surgeon')}
                                     />
                                 </div>
@@ -87,7 +87,7 @@ const Blogs = () => {
                                         <li className="author nameDoctor">
                                             <img
                                                 src={DoctorBlogsTwo}
-                                                alt=""
+                                                alt="discrption"
                                                 onClick={() => handleDoctorClick('Peter Packer')}
                                             />
                                             <span onClick={() => handleDoctorClick('Peter Packer')}>Peter Packer</span>
@@ -119,7 +119,7 @@ const Blogs = () => {
                                 <div className="post-media  post_media">
                                     <img
                                         src={ImgBlogsThree}
-                                        alt=""
+                                        alt="discrption"
                                         onClick={() => handleBlogClick('Skin Surgeon')}
                                     />
                                 </div>
@@ -128,7 +128,7 @@ const Blogs = () => {
                                         <li className="author nameDoctor">
                                             <img
                                                 src={DoctorBlogsThree}
-                                                alt=""
+                                                alt="discrption"
                                                 onClick={() => handleDoctorClick('Sonar Moyna')}
                                             />
                                             <span onClick={() => handleDoctorClick('Sonar Moyna')}>Sonar Moyna</span>
@@ -159,7 +159,7 @@ const Blogs = () => {
                                 <div className="post-media  post_media">
                                     <img
                                         src={ImgBlogsTwo}
-                                        alt=""
+                                        alt="discrption"
                                         onClick={() => handleBlogClick('Understand Health')}
                                     />
                                 </div>
@@ -168,7 +168,7 @@ const Blogs = () => {
                                         <li className="author nameDoctor">
                                             <img
                                                 src={DoctorBlogsFour}
-                                                alt=""
+                                                alt="discrption"
                                                 onClick={() => handleDoctorClick('Kalina')}
                                             />
                                             <span onClick={() => handleDoctorClick('Kalina')}>Kalina</span>
@@ -200,7 +200,7 @@ const Blogs = () => {
                                 <div className="post-media  post_media">
                                     <img
                                         src={ImgBlogsOne}
-                                        alt=""
+                                        alt="discrption"
                                         onClick={() => handleBlogClick('Health in the Past')}
                                     />
                                 </div>
@@ -209,7 +209,7 @@ const Blogs = () => {
                                         <li className="author nameDoctor">
                                             <img
                                                 src={DoctorBlogsOne}
-                                                alt=""
+                                                alt="discrption"
                                                 onClick={() => handleDoctorClick('Michel')}
                                             />
                                             <span onClick={() => handleDoctorClick('Michel')}>Michel</span>
@@ -241,7 +241,7 @@ const Blogs = () => {
                                 <div className="post-media  post_media">
                                     <img
                                         src={ImgBlogsTwo}
-                                        alt=""
+                                        alt="discrption"
                                         onClick={() => handleBlogClick('Diflucan Prescription')}
                                     />
                                 </div>
@@ -250,7 +250,7 @@ const Blogs = () => {
                                         <li className="author nameDoctor">
                                             <img
                                                 src={DoctorBlogsTwo}
-                                                alt=""
+                                                alt="discrption"
                                                 onClick={() => handleDoctorClick('Peter Packer')}
                                             />
                                             <span onClick={() => handleDoctorClick('Peter Packer')}>Peter Packer</span>
@@ -282,7 +282,7 @@ const Blogs = () => {
                                 <div className="post-media  post_media">
                                     <img
                                         src={ImgBlogsThree}
-                                        alt=""
+                                        alt="discrption"
                                         onClick={() => handleBlogClick('Gigantic Influences of Health')}
                                     />
                                 </div>
@@ -291,7 +291,7 @@ const Blogs = () => {
                                         <li className="author nameDoctor">
                                             <img
                                                 src={DoctorBlogsThree}
-                                                alt=""
+                                                alt="discrption"
                                                 onClick={() => handleDoctorClick('Sonar Moyna')}
                                             />
                                             <span onClick={() => handleDoctorClick('Sonar Moyna')}>Sonar Moyna</span>
@@ -323,7 +323,7 @@ const Blogs = () => {
                                 <div className="post-media  post_media">
                                     <img
                                         src={ImgBlogsOne}
-                                        alt=""
+                                        alt="discrption"
                                         onClick={() => handleBlogClick('Underrated Skin Surgeon')}
                                     />
                                 </div>
@@ -332,7 +332,7 @@ const Blogs = () => {
                                         <li className="author nameDoctor">
                                             <img
                                                 src={DoctorBlogsFour}
-                                                alt=""
+                                                alt="discrption"
                                                 onClick={() => handleDoctorClick('Kalina')}
                                             />
                                             <span onClick={() => handleDoctorClick('Kalina')}>Kalina</span>
@@ -364,7 +364,7 @@ const Blogs = () => {
                                 <div className="post-media  post_media">
                                     <img
                                         src={ImgBlogsTwo}
-                                        alt=""
+                                        alt="discrption"
                                         onClick={() => handleBlogClick('Dentist Regularly')}
                                     />
                                 </div>
@@ -373,7 +373,7 @@ const Blogs = () => {
                                         <li className="author nameDoctor">
                                             <img
                                                 src={DoctorBlogsOne}
-                                                alt=""
+                                                alt="discrption"
                                                 onClick={() => handleDoctorClick('Michel')}
                                             />
                                             <span onClick={() => handleDoctorClick('Michel')}>Michel</span>

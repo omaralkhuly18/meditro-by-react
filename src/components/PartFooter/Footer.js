@@ -22,7 +22,7 @@ const ContainerFooter = () => {
 
                         <div className="widget widget_info">
                             <div className="footer_logo">
-                                <Link to="/Home"><img src={Logo} /></Link>
+                                <Link to="/Home"><img src={Logo} alt='LOGO'/></Link>
                             </div>
                             <div className="ft_contact">
                                 <p className='p_foo'>

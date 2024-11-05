@@ -100,36 +100,36 @@ const Testimonial = () => {
                     <div className='row align-items-center'>
                         <div className="col-lg-6 text-center">
                             <div className="thumb-wraper">
-                                <img className="bg-img" src={ImgTestimonial} alt="" />
+                                <img className="bg-img" src={ImgTestimonial} alt="discrption" />
                                 <ul>
                                     <li data-member="1">
                                         <a href="/react/">
-                                            <img src={DoctorOne} alt="" />
+                                            <img src={DoctorOne} alt="discrption" />
                                         </a>
                                     </li>
                                     <li data-member="2">
                                         <a href="/react/">
-                                            <img src={DoctorTwo} alt="" />
+                                            <img src={DoctorTwo} alt="discrption" />
                                         </a>
                                     </li>
                                     <li data-member="3">
                                         <a href="/react/">
-                                            <img src={DoctorThree} alt="" />
+                                            <img src={DoctorThree} alt="discrption" />
                                         </a>
                                     </li>
                                     <li data-member="4">
                                         <a href="/react/">
-                                            <img src={DoctorFour} alt="" />
+                                            <img src={DoctorFour} alt="discrption" />
                                         </a>
                                     </li>
                                     <li data-member="5">
                                         <a href="/react/">
-                                            <img src={DoctorFive} alt="" />
+                                            <img src={DoctorFive} alt="discrption" />
                                         </a>
                                     </li>
                                     <li data-member="6">
                                         <a href="/react/">
-                                            <img src={DoctorSix} alt="" />
+                                            <img src={DoctorSix} alt="discrption" />
                                         </a>
                                     </li>
                                 </ul>

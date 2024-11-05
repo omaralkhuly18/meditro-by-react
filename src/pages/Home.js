@@ -53,11 +53,11 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <img className='img_inm1 subscriber' src={ImgInmaOne} />
-                <img className='img_inm2 subscriber' src={ImgInmaTwo} />
-                <img className='img_inm3 subscriber' src={ImgInmaThree} />
-                <img className='img_inm4 subscriber' src={ImgInmaFour} />
-                <img className='img_inm5 subscriber' src={ImgInmaFive} />
+                <img className='img_inm1 subscriber' alt="discrption" src={ImgInmaOne} />
+                <img className='img_inm2 subscriber' alt="discrption" src={ImgInmaTwo} />
+                <img className='img_inm3 subscriber' alt="discrption" src={ImgInmaThree} />
+                <img className='img_inm4 subscriber' alt="discrption" src={ImgInmaFour} />
+                <img className='img_inm5 subscriber' alt="discrption" src={ImgInmaFive} />
             </header>
             <AboutUs />
             <section id="contact-section">
@@ -145,7 +145,7 @@ const Home = () => {
                                     <div className="feature-container feature-bx2 feature1">
                                         <div className="feature-box-xl mb-30">
                                             <span className="icon-cell">
-                                                <img src={Stethoscope}/>
+                                                <img alt="discrption" src={Stethoscope}/>
                                             </span>
                                         </div>
                                         <div className="icon-content">
@@ -159,7 +159,7 @@ const Home = () => {
                                     <div className="feature-container feature-bx2 feature2">
                                         <div className="feature-box-xl mb-20">
                                             <span className="icon-cell">
-                                                <img src={MedicineBottle}/>
+                                                <img alt="discrption" src={MedicineBottle}/>
                                             </span>
                                         </div>
                                         <div className="icon-content">
@@ -173,7 +173,7 @@ const Home = () => {
                                     <div className="feature-container feature-bx2 feature3">
                                         <div className="feature-box-xl mb-20">
                                             <span className="icon-cell">
-                                            <img src={FirstAidKit}/>
+                                            <img alt="discrption" src={FirstAidKit}/>
                                             </span>
                                         </div>
                                         <div className="icon-content">
@@ -187,7 +187,7 @@ const Home = () => {
                                     <div className="feature-container feature-bx2 feature1">
                                         <div className="feature-box-xl mb-20">
                                             <span className="icon-cell">
-                                            <img src={Syringe}/>
+                                            <img alt="discrption" src={Syringe}/>
                                             </span>
                                         </div>
                                         <div className="icon-content">
@@ -201,7 +201,7 @@ const Home = () => {
                                     <div className="feature-container feature-bx2 feature2">
                                         <div className="feature-box-xl mb-20">
                                             <span className="icon-cell">
-                                                <img src={Ambulance}/>
+                                                <img alt="discrption" src={Ambulance}/>
                                             </span>
                                         </div>
                                         <div className="icon-content">
@@ -229,13 +229,13 @@ const Home = () => {
                                 </div>
                                 <div className="col-xl-7 col-lg-6 col-md-6">
                                     <div className="appointment-thumb">
-                                        <img className='img_par' src={Appointment1} alt="" />
+                                        <img className='img_par' src={Appointment1} alt="discrption" />
                                         <div className="images-group">
-                                            <img className="img1" src={Appointment2} alt="" />
-                                            <img className="img2" src={Appointment3} alt="" />
-                                            <img className="img3" src={Appointment4} alt="" />
-                                            <img className="img4" src={Appointment5} alt="" />
-                                            <img className="img5" src={Appointment6} alt="" />
+                                            <img className="img1" src={Appointment2} alt="discrption" />
+                                            <img className="img2" src={Appointment3} alt="discrption" />
+                                            <img className="img3" src={Appointment4} alt="discrption" />
+                                            <img className="img4" src={Appointment5} alt="discrption" />
+                                            <img className="img5" src={Appointment6} alt="discrption" />
                                         </div>
                                     </div>
                                 </div>
