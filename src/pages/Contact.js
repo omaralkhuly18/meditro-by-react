@@ -33,7 +33,7 @@ const Contact = () => {
                                     <h6 className="title">
                                         <FontAwesomeIcon icon={faIdBadge} />
                                         Email &amp; Phone</h6>
-                                    <a href="javascript:void(0);" className="text-white">info@yourdomain.com</a>
+                                    <a href="https://mail.google.com/mail/u/0/#inbox" className="text-white">silvertriangle11@gmail.com</a>
                                     <p>(+68) 120034509</p>
                                 </div>
                                 <div className="icon-box">
@@ -41,15 +41,15 @@ const Contact = () => {
                                         <FontAwesomeIcon icon={faGlobe} />
                                         Follow Us</h6>
                                     <ul className="social-media social_media">
-                                        <li><a target="_blank"
+                                        <li><a rel="noopener noreferrer"  target="_blank"
                                             href="https://twitter.com/">
                                             <FontAwesomeIcon icon={faTwitter} />
                                         </a></li>
-                                        <li><a target="_blank"
+                                        <li><a target="_blank" rel="noopener noreferrer"
                                             href="https://www.linkedin.com/">
                                             <FontAwesomeIcon icon={faLinkedinIn} />
                                         </a></li>
-                                        <li><a target="_blank"
+                                        <li><a target="_blank" rel="noopener noreferrer"
                                             href="https://www.instagram.com/">
                                             <FontAwesomeIcon icon={faInstagram} />
                                         </a></li>
