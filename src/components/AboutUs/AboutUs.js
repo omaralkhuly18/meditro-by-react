@@ -40,7 +40,7 @@ const AboutUs = () => {
                 <div class="col-lg-6 mb-30">
                     <div class="heading-bx">
                         <h6 class="title-ext text_secondary">
-                            About Us
+                            about Us
                         </h6>
                         <h2 class="title_about1">
                             The Great Place Of Medical Hospital Center
