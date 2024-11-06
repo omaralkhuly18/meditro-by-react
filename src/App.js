@@ -17,13 +17,13 @@ import DetailsPage from './components/Booking/DetailsPage';
 import ServicesDetails from './pages/ServicesDetails';
 import SearchBar from './components/ModealSearch/ModealSearch';
 import Layouts from './components/Layout/Layouts';
-import { createBrowserRouter, createRoutesFromElements , Route, RouterProvider , Navigate} 
+import {Route , BrowserRouter , Routes , Navigate} 
 from 'react-router-dom';
 
-// يجب أن يكون createRoutesFromElements (جمع Elements)
-const routes = createBrowserRouter(
-  createRoutesFromElements(
-    <Route>
+function App() {
+  return (
+    <BrowserRouter>
+    <Routes>
       {/* إعادة التوجيه من الجذر إلى /home */}
       <Route path="/" element={<Navigate to="/home" />} />
       
@@ -45,15 +45,8 @@ const routes = createBrowserRouter(
         <Route path='FAQ' element={<PageNotFound/>}/>
         <Route path="/servicesDetails/:serviceType" element={<ServicesDetails/>}/>
       </Route>
-    </Route>
-  )
-);
-
-function App() {
-  return (
-    <Fragment>
-      <RouterProvider router={routes} />
-    </Fragment>
+    </Routes>
+    </BrowserRouter>
   );
 }
 
